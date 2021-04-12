@@ -58,7 +58,7 @@ export function renderIntermediateTree(treeWrap = { tree: [] }, options = {}) {
       }
       return CodeComponent(options)({ code, language });
     },
-    heading: ({ text, level }) => {
+    heading: ({ text, level, key }) => {
       // eslint-disable-next-line no-param-reassign
       tracker.currentId = tracker.currentId.slice(0, level - 1);
       tracker.currentId.push(text.replace(/\s/g, '-').toLowerCase());
@@ -85,13 +85,14 @@ export function renderIntermediateTree(treeWrap = { tree: [] }, options = {}) {
       }
 
       // eslint-disable-next-line no-use-before-define
-      return options.createElement(
-        `h${level}`,
-        {
+      return parseTreeNode({
+        tag: `h${level}`,
+        props: {
           id,
+          key,
         },
-        text
-      );
+        children: text,
+      });
     },
   };
 
@@ -100,14 +101,18 @@ export function renderIntermediateTree(treeWrap = { tree: [] }, options = {}) {
       return astNode;
     }
     if (Array.isArray(astNode)) {
+      return astNode.map(node => parseTreeNode(node));
+    }
+
+    if (typeof astNode === 'object') {
       // eslint-disable-next-line no-plusplus
       const elementId = tracker.nextElementId++;
-      const type = astNode[0];
+
+      // Type can be null
+      const type = astNode.tag;
       let customTagRenderer = null;
-      if (!type) {
-        throw new Error(`no type for node: ${JSON.stringify(astNode, 0, 4)}`);
-      }
-      const props = astNode[1] || {};
+
+      const props = astNode.props || {};
       let children = null;
       if (specialRenderers[type]) {
         return specialRenderers[type](props, children);
@@ -117,11 +122,17 @@ export function renderIntermediateTree(treeWrap = { tree: [] }, options = {}) {
         customTagRenderer = options.elements[type];
       }
 
-      if (astNode[2]) {
-        children = Array.isArray(astNode[2])
-          ? astNode[2].map(node => parseTreeNode(node))
-          : astNode[2];
+      if (astNode.children) {
+        children = Array.isArray(astNode.children)
+          ? astNode.children.map(node => parseTreeNode(node))
+          : astNode.children;
       }
+
+      // Type is null
+      if (!type) {
+        return children;
+      }
+
       return options.createElement(
         customTagRenderer || type,
         {

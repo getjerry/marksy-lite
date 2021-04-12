@@ -5,6 +5,9 @@ function createRenderer(tracker) {
   const renderer = new marked.Renderer();
 
   function populateInlineContent(content = '') {
+    if (typeof content !== 'string') {
+      return content;
+    }
     const contentArray = content.split(/(\{\{.*?\}\})/);
     const extractedElements = contentArray.map(text => {
       const elementIdMatch = text.match(/\{\{(.*)\}\}/);
@@ -22,7 +25,7 @@ function createRenderer(tracker) {
     return extractedElements;
   }
 
-  function buildElement(tag, props = {}, children, addIdAsKey) {
+  function buildElement(tag, props = {}, children, addIdAsKey = true) {
     // eslint-disable-next-line no-plusplus, no-param-reassign
     const elementId = tracker.nextElementId++;
     let processedChildren = null;
@@ -33,12 +36,17 @@ function createRenderer(tracker) {
         ? children.map(populateInlineContent)
         : populateInlineContent(children);
     }
-    if (addIdAsKey) {
+    if (addIdAsKey && processedProps) {
       processedProps.key = `md_${elementId}`;
     }
 
     // eslint-disable-next-line no-param-reassign
-    tracker.elements[elementId] = [tag, processedProps, processedChildren];
+    tracker.elements[elementId] = {
+      tag,
+      props: processedProps,
+      children: processedChildren,
+    };
+    // [tag, processedProps, processedChildren];
     tracker.tree.push(tracker.elements[elementId]);
     return `{{${elementId}}}`;
   }

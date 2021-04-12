@@ -41,7 +41,6 @@ export default function createRenderer(tracker, options, overrides = {}) {
     let inlineContent = null;
 
     const elementType = options.elements && options.elements[type];
-    console.log('addElement', tag, props, children, type);
 
     if (children) {
       inlineContent = Array.isArray(children)

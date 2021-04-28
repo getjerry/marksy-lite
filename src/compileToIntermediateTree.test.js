@@ -1,18 +1,14 @@
 /* eslint-disable react/destructuring-assignment */
 /* eslint-disable react/jsx-one-expression-per-line */
-import React, { Component, createElement } from 'react';
+import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import Preact from 'preact';
-import preactRenderToString from 'preact-render-to-string';
-import { renderToString as infernoRenderToString } from 'inferno-server';
-import { createElement as infernoCreateElement } from 'inferno-create-element';
 
 import hljs from 'highlight.js/lib/highlight';
 import hljsJs from 'highlight.js/lib/languages/javascript';
 import hljsXml from 'highlight.js/lib/languages/xml';
 
 // eslint-disable-next-line
-import marksy, { compileToIntermediateTree } from './';
+import { compileToIntermediateTree } from './';
 
 hljs.registerLanguage('javascript', hljsJs);
 hljs.registerLanguage('xml', hljsXml);
@@ -177,30 +173,6 @@ it('should produce TOC', () => {
   expect(JSON.stringify(compiled.toc, null, 2)).toMatchSnapshot();
 });
 
-it('should produce custom tags', () => {
-  const compiled = compileToIntermediateTree(`
-# foo
-  `);
-
-  expect(compiled).toMatchSnapshot();
-});
-
-it('should work with Preact', () => {
-  const compiled = compileToIntermediateTree(`
-# foo
-  `);
-
-  expect(preactRenderToString(Preact.h('div', null, compiled.tree))).toMatchSnapshot();
-});
-
-it('should work with Inferno', () => {
-  const compiled = compileToIntermediateTree(`
-# foo
-  `);
-
-  expect(infernoRenderToString(infernoCreateElement('div', null, compiled.tree))).toMatchSnapshot();
-});
-
 it('should allow injecting context to elements', () => {
   const compiled = compileToIntermediateTree(
     `
@@ -211,36 +183,6 @@ it('should allow injecting context to elements', () => {
       foo: 'bar',
     }
   );
-
-  expect(compiled).toMatchSnapshot();
-});
-
-it('should allow overriding inline code element', () => {
-  const compiled = compileToIntermediateTree('Hello `code`');
-
-  expect(compiled).toMatchSnapshot();
-});
-
-it('should allow overriding block code element', () => {
-  const compiled = compileToIntermediateTree('```js\ncode\n```');
-
-  expect(compiled).toMatchSnapshot();
-});
-
-it('should escape code when no highlighting is supplied', () => {
-  const compiled = compileToIntermediateTree('```js\nconst Foo = () => <div/>\n```');
-
-  expect(compiled).toMatchSnapshot();
-});
-
-it('should highlight code with highlight.js', () => {
-  const compiled = compileToIntermediateTree('```js\nconst foo = "bar"\n```');
-
-  expect(compiled).toMatchSnapshot();
-});
-
-it('should not crash highlight.js with unsupported language', () => {
-  const compiled = compileToIntermediateTree('```unsuppoted_language\nconst foo = "bar"\n```');
 
   expect(compiled).toMatchSnapshot();
 });

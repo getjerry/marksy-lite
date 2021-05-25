@@ -106,7 +106,7 @@ function createRenderer(tracker) {
     return buildElement(tag, { className: flag.align ? `text-${flag.align}` : undefined }, content);
   };
 
-  renderer.codespan = text => buildElement('code', null, text, 'codespan');
+  renderer.codespan = text => buildElement('codespan', null, text, 'codespan');
 
   renderer.image = (href, title, text) => buildElement('img', { src: href, alt: text });
 

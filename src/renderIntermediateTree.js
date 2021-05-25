@@ -59,6 +59,17 @@ export function renderIntermediateTree(treeWrap = { tree: [] }, options = {}, co
       }
       return CodeComponent(options)({ code, language });
     },
+    codespan: (props, children, elementId) => {
+      return options.createElement(
+        'code',
+        {
+          key: elementId,
+          context: tracker.context,
+          ...props,
+        },
+        children
+      );
+    },
     heading: ({ text, level, key }) => {
       // eslint-disable-next-line no-param-reassign
       tracker.currentId = tracker.currentId.slice(0, level - 1);
@@ -115,13 +126,6 @@ export function renderIntermediateTree(treeWrap = { tree: [] }, options = {}, co
 
       const props = astNode.props || {};
       let children = null;
-      if (specialRenderers[type]) {
-        return specialRenderers[type](props, children);
-      }
-
-      if (options.elements?.[type]) {
-        customTagRenderer = options.elements[type];
-      }
 
       if (astNode.children) {
         children = Array.isArray(astNode.children)
@@ -132,6 +136,12 @@ export function renderIntermediateTree(treeWrap = { tree: [] }, options = {}, co
       // Type is null
       if (!type) {
         return children;
+      }
+
+      if (options.elements?.[type]) {
+        customTagRenderer = options.elements[type];
+      } else if (specialRenderers[type]) {
+        return specialRenderers[type](props, children, elementId);
       }
 
       return options.createElement(

@@ -1,0 +1,406 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Two step render result should be same with marksy codespans 1`] = `
+<div>
+  <p>
+    install with 
+    <code>
+      $ npm install
+    </code>
+  </p>
+</div>
+`;
+
+exports[`Two step render result should be same with marksy components using H and marksy language 1`] = `
+<div>
+  <div>
+    mip
+  </div>
+</div>
+`;
+
+exports[`Two step render result should be same with marksy headers 1`] = `
+<div>
+  <h1
+    id="header1"
+  >
+    header1
+  </h1>
+  <h2
+    id="header1-header2"
+  >
+    header2
+  </h2>
+  <h3
+    id="header1-header2-header3"
+  >
+    header3
+  </h3>
+  <h4
+    id="header1-header2-header3-header4"
+  >
+    header4
+  </h4>
+</div>
+`;
+
+exports[`Two step render result should be same with marksy html 1`] = `
+<div>
+  <div>
+    <div>
+      hello
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Two step render result should be same with marksy image 1`] = `
+<div>
+  <p>
+    <img
+      alt="test"
+      src="http://some.com/image.png"
+    />
+  </p>
+</div>
+`;
+
+exports[`Two step render result should be same with marksy italic text 1`] = `
+<div>
+  <p>
+    hello 
+    <em>
+      there
+    </em>
+  </p>
+</div>
+`;
+
+exports[`Two step render result should be same with marksy links 1`] = `
+<div>
+  <p>
+    <a
+      href="http://example.com"
+    >
+      my link
+    </a>
+  </p>
+</div>
+`;
+
+exports[`Two step render result should be same with marksy list 1`] = `
+<div>
+  <ul>
+    <li>
+      foo
+    </li>
+    <li>
+      bar
+    </li>
+  </ul>
+</div>
+`;
+
+exports[`Two step render result should be same with marksy multiple html 1`] = `
+<div>
+  <div>
+    <div>
+      hello
+    </div>
+    
+
+    <strong>
+      there
+    </strong>
+    
+
+    <em>
+      world
+    </em>
+  </div>
+</div>
+`;
+
+exports[`Two step render result should be same with marksy nested lists 1`] = `
+<div>
+  <ul>
+    <li>
+      Colors
+      <ul>
+        <li>
+          Red
+        </li>
+        <li>
+          Blue
+        </li>
+      </ul>
+    </li>
+    <li>
+      Shape
+      <ul>
+        <li>
+          Triangle
+        </li>
+        <li>
+          Rectangle
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+`;
+
+exports[`Two step render result should be same with marksy ordered list 1`] = `
+<div>
+  <ol>
+    <li>
+      foo
+    </li>
+    <li>
+      bar
+    </li>
+  </ol>
+</div>
+`;
+
+exports[`Two step render result should be same with marksy self-closing tag 1`] = `
+<div>
+  <p>
+      
+    <img
+      alt="test"
+      src="http://some.com/image.png"
+    />
+  </p>
+  <div>
+      
+    <div>
+      <br />
+    </div>
+    
+
+
+  </div>
+  <div>
+      
+    <hr />
+    
+
+
+  </div>
+  <div>
+      
+    <input
+      type="text"
+    />
+    
+
+  </div>
+</div>
+`;
+
+exports[`Two step render result should be same with marksy should allow injecting context to elements 1`] = `
+<div>
+  <div>
+    bar
+  </div>
+</div>
+`;
+
+exports[`Two step render result should be same with marksy should allow overriding block code element 1`] = `
+<div>
+  <div>
+    js
+    :
+    code
+  </div>
+</div>
+`;
+
+exports[`Two step render result should be same with marksy should allow overriding inline code element 1`] = `
+<div>
+  <p>
+    Hello 
+    <span>
+      code
+    </span>
+  </p>
+</div>
+`;
+
+exports[`Two step render result should be same with marksy should be able to combine in compilation 1`] = `
+<div>
+  <h1
+    id="hey"
+  >
+    hey
+  </h1>
+  <ul>
+    <li>
+      foo
+    </li>
+  </ul>
+  <p>
+    -bar
+  </p>
+</div>
+`;
+
+exports[`Two step render result should be same with marksy should escape code when no highlighting is supplied 1`] = `
+<div>
+  <pre>
+    <code
+      class="language-js"
+    >
+      const Foo = () =&gt; &lt;div/&gt;
+    </code>
+  </pre>
+</div>
+`;
+
+exports[`Two step render result should be same with marksy should handle same name nested headers 1`] = `
+<div>
+  <h1
+    id="header1"
+  >
+    header1
+  </h1>
+  <h2
+    id="header1-header2"
+  >
+    header2
+  </h2>
+  <h1
+    id="header3"
+  >
+    header3
+  </h1>
+  <h2
+    id="header3-header2"
+  >
+    header2
+  </h2>
+</div>
+`;
+
+exports[`Two step render result should be same with marksy should produce TOC 1`] = `
+<div>
+  <h1
+    id="foo"
+  >
+    foo
+  </h1>
+  <h2
+    id="foo-bar"
+  >
+    bar
+  </h2>
+  <h3
+    id="foo-bar-baz"
+  >
+    baz
+  </h3>
+</div>
+`;
+
+exports[`Two step render result should be same with marksy should produce custom tags 1`] = `
+<div>
+  <div>
+    foo
+  </div>
+</div>
+`;
+
+exports[`Two step render result should be same with marksy should work with Inferno 1`] = `"<div><div>foo</div></div>"`;
+
+exports[`Two step render result should be same with marksy should work with Preact 1`] = `"<div><div>foo</div></div>"`;
+
+exports[`Two step render result should be same with marksy strong text 1`] = `
+<div>
+  <p>
+    hello 
+    <strong>
+      there
+    </strong>
+  </p>
+</div>
+`;
+
+exports[`Two step render result should be same with marksy tables 1`] = `
+<div>
+  <table>
+    <thead>
+      <tr>
+        <th>
+          Tables
+        </th>
+        <th
+          class="text-center"
+        >
+          Are
+        </th>
+        <th
+          class="text-right"
+        >
+          Cool
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>
+          col 3 is
+        </td>
+        <td
+          class="text-center"
+        >
+          right-aligned
+        </td>
+        <td
+          class="text-right"
+        >
+          $1600
+        </td>
+      </tr>
+      <tr>
+        <td>
+          col 2 is
+        </td>
+        <td
+          class="text-center"
+        >
+          centered
+        </td>
+        <td
+          class="text-right"
+        >
+          $12
+        </td>
+      </tr>
+      <tr>
+        <td>
+          zebra stripes
+        </td>
+        <td
+          class="text-center"
+        >
+          are neat
+        </td>
+        <td
+          class="text-right"
+        >
+          $1
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+`;
+
+exports[`Two step render result should be same with marksy text 1`] = `
+<div>
+  <p>
+    hello
+  </p>
+</div>
+`;

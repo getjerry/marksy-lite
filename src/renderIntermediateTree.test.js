@@ -33,15 +33,29 @@ TestComponent.defaultProps = {
   children: null,
 };
 
-function getRenderedContainer(content) {
-  const compile = marksy({ createElement });
-  const compiled = compile(content);
+function getCompiled(content, options, context) {
+  const compile = marksy(options || { createElement });
+  const compiled = compile(content, {}, context);
+  return compiled;
+}
+
+function getRenderedContainer(content, options, context) {
+  const compiled = getCompiled(content, options, context);
   const { container } = render(<TestComponent>{compiled.tree}</TestComponent>);
   return container;
 }
 
-function getRenderedContainerWithTwoSteps(content) {
-  const compiled = renderIntermediateTree(compileToIntermediateTree(content), { createElement });
+function getCompiledTwoStep(content, options, context) {
+  const compiled = renderIntermediateTree(
+    compileToIntermediateTree(content),
+    options || { createElement },
+    context
+  );
+  return compiled;
+}
+
+function getRenderedContainerWithTwoSteps(content, options, context) {
+  const compiled = getCompiledTwoStep(content, options, context);
   const { container } = render(<TestComponent>{compiled.tree}</TestComponent>);
   return container;
 }
@@ -55,21 +69,25 @@ function getTwoCompiledContainer(content) {
 describe('Two step render result should be same with marksy', () => {
   it('text', () => {
     const [container, containerTwo] = getTwoCompiledContainer('hello');
+    expect(container.firstChild).toMatchSnapshot();
     expect(container.firstChild).toStrictEqual(containerTwo.firstChild);
   });
 
   it('strong text', () => {
     const [container, containerTwo] = getTwoCompiledContainer('hello **there**');
+    expect(container.firstChild).toMatchSnapshot();
     expect(container.firstChild).toStrictEqual(containerTwo.firstChild);
   });
 
   it('italic text', () => {
     const [container, containerTwo] = getTwoCompiledContainer('hello *there*');
+    expect(container.firstChild).toMatchSnapshot();
     expect(container.firstChild).toStrictEqual(containerTwo.firstChild);
   });
 
   it('links', () => {
     const [container, containerTwo] = getTwoCompiledContainer('[my link](http://example.com)');
+    expect(container.firstChild).toMatchSnapshot();
     expect(container.firstChild).toStrictEqual(containerTwo.firstChild);
   });
 
@@ -80,6 +98,7 @@ describe('Two step render result should be same with marksy', () => {
 ### header3
 #### header4
   `);
+    expect(container.firstChild).toMatchSnapshot();
     expect(container.firstChild).toStrictEqual(containerTwo.firstChild);
   });
 
@@ -90,6 +109,7 @@ describe('Two step render result should be same with marksy', () => {
 # header3
 ## header2
   `);
+    expect(container.firstChild).toMatchSnapshot();
     expect(container.firstChild).toStrictEqual(containerTwo.firstChild);
   });
 
@@ -98,6 +118,7 @@ describe('Two step render result should be same with marksy', () => {
 1. foo
 2. bar
   `);
+    expect(container.firstChild).toMatchSnapshot();
     expect(container.firstChild).toStrictEqual(containerTwo.firstChild);
   });
 
@@ -106,6 +127,7 @@ describe('Two step render result should be same with marksy', () => {
 - foo
 - bar
   `);
+    expect(container.firstChild).toMatchSnapshot();
     expect(container.firstChild).toStrictEqual(containerTwo.firstChild);
   });
 
@@ -117,21 +139,25 @@ describe('Two step render result should be same with marksy', () => {
 | col 2 is      | centered      |   $12 |
 | zebra stripes | are neat      |    $1 |
   `);
+    expect(container.firstChild).toMatchSnapshot();
     expect(container.firstChild).toStrictEqual(containerTwo.firstChild);
   });
 
   it('codespans', () => {
     const [container, containerTwo] = getTwoCompiledContainer('install with `$ npm install`');
+    expect(container.firstChild).toMatchSnapshot();
     expect(container.firstChild).toStrictEqual(containerTwo.firstChild);
   });
 
   it('image', () => {
     const [container, containerTwo] = getTwoCompiledContainer('![test](http://some.com/image.png)');
+    expect(container.firstChild).toMatchSnapshot();
     expect(container.firstChild).toStrictEqual(containerTwo.firstChild);
   });
 
   it('html', () => {
     const [container, containerTwo] = getTwoCompiledContainer('<div>hello</div>');
+    expect(container.firstChild).toMatchSnapshot();
     expect(container.firstChild).toStrictEqual(containerTwo.firstChild);
   });
 
@@ -139,22 +165,26 @@ describe('Two step render result should be same with marksy', () => {
     const [container, containerTwo] = getTwoCompiledContainer(
       '<div>hello</div>\n<strong>there</strong>\n<em>world</em>'
     );
+    expect(container.firstChild).toMatchSnapshot();
     expect(container.firstChild).toStrictEqual(containerTwo.firstChild);
   });
 
   it('components using H and marksy language', () => {
-    const compile = marksy({
+    const options = {
       createElement,
       components: {
         Test() {
           return <div>mip</div>;
         },
       },
-    });
-    const compiled = compile('```marksy\nh(Test)\n```');
-    const { container } = render(<TestComponent>{compiled.tree}</TestComponent>);
+    };
+    const content = '```marksy\nh(Test)\n```';
+
+    const container = getRenderedContainer(content, options);
+    const containerTwo = getRenderedContainerWithTwoSteps(content, options);
 
     expect(container.firstChild).toMatchSnapshot();
+    expect(container.firstChild).toStrictEqual(containerTwo.firstChild);
   });
 
   it('nested lists', () => {
@@ -166,6 +196,7 @@ describe('Two step render result should be same with marksy', () => {
   - Triangle
   - Rectangle
   `);
+    expect(container.firstChild).toMatchSnapshot();
     expect(container.firstChild).toStrictEqual(containerTwo.firstChild);
   });
 
@@ -177,12 +208,12 @@ describe('Two step render result should be same with marksy', () => {
 
 -bar
   `);
+    expect(container.firstChild).toMatchSnapshot();
     expect(container.firstChild).toStrictEqual(containerTwo.firstChild);
   });
 
   it('should produce TOC', () => {
-    const compile = marksy({ createElement });
-    const compiled = compile(`
+    const [container, containerTwo] = getTwoCompiledContainer(`
 # foo
 
 ## bar
@@ -190,103 +221,120 @@ describe('Two step render result should be same with marksy', () => {
 ### baz
   `);
 
-    expect(JSON.stringify(compiled.toc, null, 2)).toMatchSnapshot();
+    expect(container.firstChild).toMatchSnapshot();
+    expect(container.firstChild).toStrictEqual(containerTwo.firstChild);
   });
 
   it('should produce custom tags', () => {
-    const compile = marksy({
+    const options = {
       createElement,
       elements: {
         h1(props) {
           return <div>{props.children}</div>;
         },
       },
-    });
-    const compiled = compile(`
+    };
+    const content = `
 # foo
-  `);
+  `;
 
-    const { container } = render(<TestComponent>{compiled.tree}</TestComponent>);
+    const container = getRenderedContainer(content, options);
+    const containerTwo = getRenderedContainerWithTwoSteps(content, options);
 
     expect(container.firstChild).toMatchSnapshot();
+    expect(container.firstChild).toStrictEqual(containerTwo.firstChild);
   });
 
   it('should work with Preact', () => {
-    const compile = marksy({
+    const options = {
       createElement: Preact.h,
       elements: {
         h1(props) {
           return Preact.h('div', null, props.children);
         },
       },
-    });
-    const compiled = compile(`
+    };
+    const content = `
 # foo
-  `);
+  `;
+
+    const compiled = getCompiled(content, options);
+    const compiled2 = getCompiledTwoStep(content, options);
 
     expect(preactRenderToString(Preact.h('div', null, compiled.tree))).toMatchSnapshot();
+    expect(preactRenderToString(Preact.h('div', null, compiled.tree))).toStrictEqual(
+      preactRenderToString(Preact.h('div', null, compiled2.tree))
+    );
   });
 
   it('should work with Inferno', () => {
-    const compile = marksy({
+    const options = {
       createElement: infernoCreateElement,
       elements: {
         h1(props) {
           return infernoCreateElement('div', null, props.children);
         },
       },
-    });
-    const compiled = compile(`
+    };
+    const content = `
 # foo
-  `);
+  `;
+
+    const compiled = getCompiled(content, options);
+    const compiled2 = getCompiledTwoStep(content, options);
 
     expect(
       infernoRenderToString(infernoCreateElement('div', null, compiled.tree))
     ).toMatchSnapshot();
+    expect(infernoRenderToString(infernoCreateElement('div', null, compiled.tree))).toStrictEqual(
+      infernoRenderToString(infernoCreateElement('div', null, compiled2.tree))
+    );
   });
 
   it('should allow injecting context to elements', () => {
-    const compile = marksy({
+    const options = {
       createElement,
       elements: {
         h1(props) {
           return <div>{props.context.foo}</div>;
         },
       },
-    });
-    const compiled = compile(
-      `
+    };
+    const content = `
 # foo
-  `,
-      {},
-      {
-        foo: 'bar',
-      }
-    );
+  `;
 
-    const { container } = render(<TestComponent>{compiled.tree}</TestComponent>);
+    const context = {
+      foo: 'bar',
+    };
+
+    const container = getRenderedContainer(content, options, context);
+    const containerTwo = getRenderedContainerWithTwoSteps(content, options, context);
 
     expect(container.firstChild).toMatchSnapshot();
+    expect(container.firstChild).toStrictEqual(containerTwo.firstChild);
   });
 
   it('should allow overriding inline code element', () => {
-    const compile = marksy({
+    const options = {
       createElement,
       elements: {
         codespan({ children }) {
           return <span>{children}</span>;
         },
       },
-    });
-    const compiled = compile('Hello `code`');
+    };
+    const content = 'Hello `code`';
 
-    const { container } = render(<TestComponent>{compiled.tree}</TestComponent>);
+    const container = getRenderedContainer(content, options);
+    const containerTwo = getRenderedContainerWithTwoSteps(content, options);
 
     expect(container.firstChild).toMatchSnapshot();
+    expect(container.firstChild).toStrictEqual(containerTwo.firstChild);
   });
 
   it('should allow overriding block code element', () => {
-    const compile = marksy({
+    const options = {
       createElement,
       elements: {
         code({ language, code }) {
@@ -297,57 +345,27 @@ describe('Two step render result should be same with marksy', () => {
           );
         },
       },
-    });
-    const compiled = compile('```js\ncode\n```');
+    };
+    const content = '```js\ncode\n```';
 
-    const { container } = render(<TestComponent>{compiled.tree}</TestComponent>);
+    const container = getRenderedContainer(content, options);
+    const containerTwo = getRenderedContainerWithTwoSteps(content, options);
 
     expect(container.firstChild).toMatchSnapshot();
+    expect(container.firstChild).toStrictEqual(containerTwo.firstChild);
   });
 
   it('should escape code when no highlighting is supplied', () => {
-    const compile = marksy({
-      createElement,
-    });
-    const compiled = compile('```js\nconst Foo = () => <div/>\n```');
-
-    const { container } = render(<TestComponent>{compiled.tree}</TestComponent>);
-
+    const [container, containerTwo] = getTwoCompiledContainer(
+      '```js\nconst Foo = () => <div/>\n```'
+    );
     expect(container.firstChild).toMatchSnapshot();
-  });
-
-  it('should highlight code with highlight.js', () => {
-    const compile = marksy({
-      createElement,
-      highlight(language, code) {
-        return hljs.highlight(language, code).value;
-      },
-    });
-    const compiled = compile('```js\nconst foo = "bar"\n```');
-
-    const { container } = render(<TestComponent>{compiled.tree}</TestComponent>);
-
-    expect(container.firstChild).toMatchSnapshot();
-  });
-
-  it('should not crash highlight.js with unsupported language', () => {
-    const compile = marksy({
-      createElement,
-      highlight(language, code) {
-        return hljs.highlight(language, code).value;
-      },
-    });
-
-    const compiled = compile('```unsuppoted_language\nconst foo = "bar"\n```');
-
-    const { container } = render(<TestComponent>{compiled.tree}</TestComponent>);
-
-    expect(container.firstChild).toMatchSnapshot();
+    expect(container.firstChild).toStrictEqual(containerTwo.firstChild);
   });
 
   it('self-closing tag', () => {
-    const compile = marksy({ createElement });
-    const compiled = compile(`
+    const [container, containerTwo] = getTwoCompiledContainer(
+      `
   ![test](http://some.com/image.png)
   
   <div><br /></div>
@@ -355,9 +373,9 @@ describe('Two step render result should be same with marksy', () => {
   <hr/>
 
   <input type='text' />
-  `);
-    const { container } = render(<TestComponent>{compiled.tree}</TestComponent>);
-
+  `
+    );
     expect(container.firstChild).toMatchSnapshot();
+    expect(container.firstChild).toStrictEqual(containerTwo.firstChild);
   });
 });

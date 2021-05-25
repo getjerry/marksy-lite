@@ -1,6 +1,6 @@
 import { CodeComponent } from './codeRenderer';
 
-export function renderIntermediateTree(treeWrap = { tree: [] }, options = {}) {
+export function renderIntermediateTree(treeWrap = { tree: [] }, options = {}, context = undefined) {
   const tracker = {
     tree: null,
     elements: null,
@@ -10,6 +10,7 @@ export function renderIntermediateTree(treeWrap = { tree: [] }, options = {}) {
   };
   tracker.tree = [];
   tracker.elements = {};
+  tracker.context = context;
   tracker.toc = [];
   tracker.nextElementId = 0;
   tracker.currentId = [];
@@ -137,6 +138,7 @@ export function renderIntermediateTree(treeWrap = { tree: [] }, options = {}) {
         customTagRenderer || type,
         {
           key: elementId,
+          context: tracker.context,
           ...props,
         },
         children

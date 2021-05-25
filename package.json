@@ -1,6 +1,6 @@
 {
   "name": "marksy-lite",
-  "version": "8.0.2-beta",
+  "version": "8.1.1",
   "description": "Convert markdown into react components",
   "keywords": [
     "convert",
@@ -25,7 +25,8 @@
     "prepare": "npm run build",
     "prepublish": "npm run build",
     "pack": "npm run build && npm-pack-zip",
-    "release-github": "release-it --no-git --no-npm --preRelease=beta",
+    "release-github-beta": "release-it --no-git --no-npm --preRelease=beta",
+    "release-github": "release-it --no-git --no-npm",
     "size": "size-limit",
     "start": "webpack-dev-server --devtool eval-source-map --progress --colors --content-base build",
     "test": "jest"

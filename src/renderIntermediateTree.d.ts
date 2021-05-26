@@ -8,5 +8,5 @@ type Toc = {
   children?: [],
 }
 
-declare const renderIntermediateTree: (treeWrap: MarksyIntermediatePack) => { tree: React.ReactNode, toc: Toc };
+declare const renderIntermediateTree: (treeWrap: MarksyIntermediatePack, options?: unknown, context?: unknown) => { tree: React.ReactNode, toc: Toc };
 export { renderIntermediateTree };

@@ -1,0 +1,721 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should allow injecting context to elements 1`] = `
+Object {
+  "tree": Array [
+    Object {
+      "children": null,
+      "props": Object {
+        "key": "md_0",
+        "level": 1,
+        "text": "foo",
+      },
+      "tag": "heading",
+    },
+  ],
+}
+`;
+
+exports[`should be able to combine in compilation 1`] = `
+Object {
+  "tree": Array [
+    Object {
+      "children": null,
+      "props": Object {
+        "key": "md_0",
+        "level": 1,
+        "text": "hey",
+      },
+      "tag": "heading",
+    },
+    Object {
+      "children": Array [
+        null,
+        Object {
+          "children": Array [
+            "foo",
+          ],
+          "props": null,
+          "tag": "li",
+        },
+        null,
+      ],
+      "props": null,
+      "tag": "ul",
+    },
+    Object {
+      "children": Array [
+        "-bar",
+      ],
+      "props": null,
+      "tag": "p",
+    },
+  ],
+}
+`;
+
+exports[`should be able to compile codespans 1`] = `
+Object {
+  "tree": Array [
+    Object {
+      "children": Array [
+        "install with ",
+        Object {
+          "children": Array [
+            "$ npm install",
+          ],
+          "props": null,
+          "tag": "codespan",
+        },
+        null,
+      ],
+      "props": null,
+      "tag": "p",
+    },
+  ],
+}
+`;
+
+exports[`should be able to compile components using H and marksy language 1`] = `
+Object {
+  "tree": Array [
+    Object {
+      "children": null,
+      "props": Object {
+        "code": "h(Test)",
+        "key": "md_0",
+        "language": "marksy",
+      },
+      "tag": "code",
+    },
+  ],
+}
+`;
+
+exports[`should be able to compile headers 1`] = `
+Object {
+  "tree": Array [
+    Object {
+      "children": null,
+      "props": Object {
+        "key": "md_0",
+        "level": 1,
+        "text": "header1",
+      },
+      "tag": "heading",
+    },
+    Object {
+      "children": null,
+      "props": Object {
+        "key": "md_1",
+        "level": 2,
+        "text": "header2",
+      },
+      "tag": "heading",
+    },
+    Object {
+      "children": null,
+      "props": Object {
+        "key": "md_2",
+        "level": 3,
+        "text": "header3",
+      },
+      "tag": "heading",
+    },
+    Object {
+      "children": null,
+      "props": Object {
+        "key": "md_3",
+        "level": 4,
+        "text": "header4",
+      },
+      "tag": "heading",
+    },
+  ],
+}
+`;
+
+exports[`should be able to compile html 1`] = `
+Object {
+  "tree": Array [
+    Object {
+      "children": null,
+      "props": Object {
+        "dangerouslySetInnerHTML": Object {
+          "__html": "<div>hello</div>",
+        },
+        "key": "md_0",
+      },
+      "tag": "div",
+    },
+  ],
+}
+`;
+
+exports[`should be able to compile image 1`] = `
+Object {
+  "tree": Array [
+    Object {
+      "children": Array [
+        null,
+        Object {
+          "children": null,
+          "props": Object {
+            "alt": "test",
+            "key": "md_0",
+            "src": "http://some.com/image.png",
+          },
+          "tag": "img",
+        },
+        null,
+      ],
+      "props": null,
+      "tag": "p",
+    },
+  ],
+}
+`;
+
+exports[`should be able to compile italic text 1`] = `
+Object {
+  "tree": Array [
+    Object {
+      "children": Array [
+        "hello ",
+        Object {
+          "children": Array [
+            "there",
+          ],
+          "props": null,
+          "tag": "em",
+        },
+        null,
+      ],
+      "props": null,
+      "tag": "p",
+    },
+  ],
+}
+`;
+
+exports[`should be able to compile links 1`] = `
+Object {
+  "tree": Array [
+    Object {
+      "children": Array [
+        null,
+        Object {
+          "children": Array [
+            "my link",
+          ],
+          "props": Object {
+            "href": "http://example.com",
+            "key": "md_0",
+            "title": null,
+          },
+          "tag": "a",
+        },
+        null,
+      ],
+      "props": null,
+      "tag": "p",
+    },
+  ],
+}
+`;
+
+exports[`should be able to compile list 1`] = `
+Object {
+  "tree": Array [
+    Object {
+      "children": Array [
+        null,
+        Object {
+          "children": Array [
+            "foo",
+          ],
+          "props": null,
+          "tag": "li",
+        },
+        null,
+        Object {
+          "children": Array [
+            "bar",
+          ],
+          "props": null,
+          "tag": "li",
+        },
+        null,
+      ],
+      "props": null,
+      "tag": "ul",
+    },
+  ],
+}
+`;
+
+exports[`should be able to compile multiple html 1`] = `
+Object {
+  "tree": Array [
+    Object {
+      "children": null,
+      "props": Object {
+        "dangerouslySetInnerHTML": Object {
+          "__html": "<div>hello</div>
+<strong>there</strong>
+<em>world</em>",
+        },
+        "key": "md_0",
+      },
+      "tag": "div",
+    },
+  ],
+}
+`;
+
+exports[`should be able to compile nested lists 1`] = `
+Object {
+  "tree": Array [
+    Object {
+      "children": Array [
+        null,
+        Object {
+          "children": Array [
+            "Colors",
+            Object {
+              "children": Array [
+                null,
+                Object {
+                  "children": Array [
+                    "Red",
+                  ],
+                  "props": null,
+                  "tag": "li",
+                },
+                null,
+                Object {
+                  "children": Array [
+                    "Blue",
+                  ],
+                  "props": null,
+                  "tag": "li",
+                },
+                null,
+              ],
+              "props": null,
+              "tag": "ul",
+            },
+            null,
+          ],
+          "props": null,
+          "tag": "li",
+        },
+        null,
+        Object {
+          "children": Array [
+            "Shape",
+            Object {
+              "children": Array [
+                null,
+                Object {
+                  "children": Array [
+                    "Triangle",
+                  ],
+                  "props": null,
+                  "tag": "li",
+                },
+                null,
+                Object {
+                  "children": Array [
+                    "Rectangle",
+                  ],
+                  "props": null,
+                  "tag": "li",
+                },
+                null,
+              ],
+              "props": null,
+              "tag": "ul",
+            },
+            null,
+          ],
+          "props": null,
+          "tag": "li",
+        },
+        null,
+      ],
+      "props": null,
+      "tag": "ul",
+    },
+  ],
+}
+`;
+
+exports[`should be able to compile ordered list 1`] = `
+Object {
+  "tree": Array [
+    Object {
+      "children": Array [
+        null,
+        Object {
+          "children": Array [
+            "foo",
+          ],
+          "props": null,
+          "tag": "li",
+        },
+        null,
+        Object {
+          "children": Array [
+            "bar",
+          ],
+          "props": null,
+          "tag": "li",
+        },
+        null,
+      ],
+      "props": null,
+      "tag": "ol",
+    },
+  ],
+}
+`;
+
+exports[`should be able to compile self-closing tag 1`] = `
+Object {
+  "tree": Array [
+    Object {
+      "children": Array [
+        "  ",
+        Object {
+          "children": null,
+          "props": Object {
+            "alt": "test",
+            "key": "md_0",
+            "src": "http://some.com/image.png",
+          },
+          "tag": "img",
+        },
+        null,
+      ],
+      "props": null,
+      "tag": "p",
+    },
+    Object {
+      "children": null,
+      "props": Object {
+        "dangerouslySetInnerHTML": Object {
+          "__html": "  <div><br /></div>
+
+",
+        },
+        "key": "md_2",
+      },
+      "tag": "div",
+    },
+    Object {
+      "children": null,
+      "props": Object {
+        "dangerouslySetInnerHTML": Object {
+          "__html": "  <hr/>
+
+",
+        },
+        "key": "md_3",
+      },
+      "tag": "div",
+    },
+    Object {
+      "children": null,
+      "props": Object {
+        "dangerouslySetInnerHTML": Object {
+          "__html": "  <input type='text' />
+",
+        },
+        "key": "md_4",
+      },
+      "tag": "div",
+    },
+  ],
+}
+`;
+
+exports[`should be able to compile strong text 1`] = `
+Object {
+  "tree": Array [
+    Object {
+      "children": Array [
+        "hello ",
+        Object {
+          "children": Array [
+            "there",
+          ],
+          "props": null,
+          "tag": "strong",
+        },
+        null,
+      ],
+      "props": null,
+      "tag": "p",
+    },
+  ],
+}
+`;
+
+exports[`should be able to compile tables 1`] = `
+Object {
+  "tree": Array [
+    Object {
+      "children": Array [
+        Array [
+          null,
+          Object {
+            "children": Array [
+              null,
+              Object {
+                "children": Array [
+                  null,
+                  Object {
+                    "children": Array [
+                      "Tables",
+                    ],
+                    "props": Object {
+                      "className": undefined,
+                      "key": "md_0",
+                    },
+                    "tag": "th",
+                  },
+                  null,
+                  Object {
+                    "children": Array [
+                      "Are",
+                    ],
+                    "props": Object {
+                      "className": "text-center",
+                      "key": "md_1",
+                    },
+                    "tag": "th",
+                  },
+                  null,
+                  Object {
+                    "children": Array [
+                      "Cool",
+                    ],
+                    "props": Object {
+                      "className": "text-right",
+                      "key": "md_2",
+                    },
+                    "tag": "th",
+                  },
+                  null,
+                ],
+                "props": null,
+                "tag": "tr",
+              },
+              null,
+            ],
+            "props": null,
+            "tag": "thead",
+          },
+          null,
+        ],
+        Array [
+          null,
+          Object {
+            "children": Array [
+              null,
+              Object {
+                "children": Array [
+                  null,
+                  Object {
+                    "children": Array [
+                      "col 3 is",
+                    ],
+                    "props": Object {
+                      "className": undefined,
+                      "key": "md_4",
+                    },
+                    "tag": "td",
+                  },
+                  null,
+                  Object {
+                    "children": Array [
+                      "right-aligned",
+                    ],
+                    "props": Object {
+                      "className": "text-center",
+                      "key": "md_5",
+                    },
+                    "tag": "td",
+                  },
+                  null,
+                  Object {
+                    "children": Array [
+                      "$1600",
+                    ],
+                    "props": Object {
+                      "className": "text-right",
+                      "key": "md_6",
+                    },
+                    "tag": "td",
+                  },
+                  null,
+                ],
+                "props": null,
+                "tag": "tr",
+              },
+              null,
+              Object {
+                "children": Array [
+                  null,
+                  Object {
+                    "children": Array [
+                      "col 2 is",
+                    ],
+                    "props": Object {
+                      "className": undefined,
+                      "key": "md_8",
+                    },
+                    "tag": "td",
+                  },
+                  null,
+                  Object {
+                    "children": Array [
+                      "centered",
+                    ],
+                    "props": Object {
+                      "className": "text-center",
+                      "key": "md_9",
+                    },
+                    "tag": "td",
+                  },
+                  null,
+                  Object {
+                    "children": Array [
+                      "$12",
+                    ],
+                    "props": Object {
+                      "className": "text-right",
+                      "key": "md_10",
+                    },
+                    "tag": "td",
+                  },
+                  null,
+                ],
+                "props": null,
+                "tag": "tr",
+              },
+              null,
+              Object {
+                "children": Array [
+                  null,
+                  Object {
+                    "children": Array [
+                      "zebra stripes",
+                    ],
+                    "props": Object {
+                      "className": undefined,
+                      "key": "md_12",
+                    },
+                    "tag": "td",
+                  },
+                  null,
+                  Object {
+                    "children": Array [
+                      "are neat",
+                    ],
+                    "props": Object {
+                      "className": "text-center",
+                      "key": "md_13",
+                    },
+                    "tag": "td",
+                  },
+                  null,
+                  Object {
+                    "children": Array [
+                      "$1",
+                    ],
+                    "props": Object {
+                      "className": "text-right",
+                      "key": "md_14",
+                    },
+                    "tag": "td",
+                  },
+                  null,
+                ],
+                "props": null,
+                "tag": "tr",
+              },
+              null,
+            ],
+            "props": null,
+            "tag": "tbody",
+          },
+          null,
+        ],
+      ],
+      "props": null,
+      "tag": "table",
+    },
+  ],
+}
+`;
+
+exports[`should be able to compile text 1`] = `
+Object {
+  "tree": Array [
+    Object {
+      "children": Array [
+        "hello",
+      ],
+      "props": null,
+      "tag": "p",
+    },
+  ],
+}
+`;
+
+exports[`should handle same name nested headers 1`] = `
+Object {
+  "tree": Array [
+    Object {
+      "children": null,
+      "props": Object {
+        "key": "md_0",
+        "level": 1,
+        "text": "header1",
+      },
+      "tag": "heading",
+    },
+    Object {
+      "children": null,
+      "props": Object {
+        "key": "md_1",
+        "level": 2,
+        "text": "header2",
+      },
+      "tag": "heading",
+    },
+    Object {
+      "children": null,
+      "props": Object {
+        "key": "md_2",
+        "level": 1,
+        "text": "header3",
+      },
+      "tag": "heading",
+    },
+    Object {
+      "children": null,
+      "props": Object {
+        "key": "md_3",
+        "level": 2,
+        "text": "header2",
+      },
+      "tag": "heading",
+    },
+  ],
+}
+`;
+
+exports[`should produce TOC 1`] = `undefined`;

@@ -1,28 +1,32 @@
 {
   "name": "marksy-lite",
-  "version": "8.0.1",
+  "version": "8.1.1",
   "description": "Convert markdown into react components",
   "keywords": [
     "convert",
     "markdown",
     "react"
   ],
-  "homepage": "https://github.com/storybooks/marksy",
+  "homepage": "https://github.com/getjerry/marksy",
   "bugs": {
-    "url": "https://github.com/storybooks/marksy/issues"
+    "url": "https://github.com/getjerry/marksy/issues"
   },
   "license": "MIT",
   "author": "Christian Alfoni",
   "main": "lib/index.js",
+  "typings": "./index.d.ts",
   "repository": {
     "type": "git",
-    "url": "https://github.com/storybooks/marksy"
+    "url": "https://github.com/getjerry/marksy"
   },
   "scripts": {
     "build": "cross-env BABEL_ENV=production babel src/ --out-dir=lib/ -s",
     "lint": "cross-env NODE_ENV=production eslint --cache --cache-location=.cache/eslint --ext .js,.jsx,.json ./src ./app",
     "prepare": "npm run build",
     "prepublish": "npm run build",
+    "pack": "npm run build && npm-pack-zip",
+    "release-github-beta": "release-it --no-git --no-npm --preRelease=beta",
+    "release-github": "release-it --no-git --no-npm",
     "size": "size-limit",
     "start": "webpack-dev-server --devtool eval-source-map --progress --colors --content-base build",
     "test": "jest"
@@ -40,6 +44,7 @@
     "@babel/plugin-proposal-function-sent": "^7.0.0",
     "@babel/plugin-proposal-json-strings": "^7.0.0",
     "@babel/plugin-proposal-numeric-separator": "^7.0.0",
+    "@babel/plugin-proposal-optional-chaining": "^7.13.12",
     "@babel/plugin-proposal-throw-expressions": "^7.0.0",
     "@babel/plugin-syntax-dynamic-import": "^7.0.0",
     "@babel/plugin-syntax-import-meta": "^7.0.0",
@@ -68,15 +73,17 @@
     "jest": "^24.8.0",
     "json-loader": "^0.5.7",
     "node-libs-browser": "^2.2.0",
+    "npm-pack-zip": "^1.2.9",
     "preact": "^10.0.3",
     "preact-render-to-string": "^5.1.0",
     "prettier": "^1.17.1",
     "prismjs": "^1.16.0",
     "prop-types": "^15.7.2",
-    "react": "^16.8.6",
-    "react-dom": "^16.8.6",
-    "react-test-renderer": "^16.8.6",
+    "react": "^16.8.6 || ^17.0.0",
+    "react-dom": "^16.8.6 || ^17.0.0",
+    "react-test-renderer": "^16.8.6 || ^17.0.0",
     "regenerator-runtime": "^0.13.3",
+    "release-it": "^14.6.1",
     "size-limit": "^2.1.6",
     "style-loader": "^1.0.0",
     "webpack": "^4.32.2",

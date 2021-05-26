@@ -6,3 +6,4 @@ build
 .eslint.js
 node_modules
 yarn.lock
+marksy-lite.zip

@@ -15,6 +15,10 @@ export function renderIntermediateTree(treeWrap = { tree: [] }, options = {}, co
   tracker.nextElementId = 0;
   tracker.currentId = [];
 
+  if (!treeWrap?.tree) {
+    throw new Error('No intermediate tree');
+  }
+
   function getTocPosition(toc, level) {
     let currentLevel = toc.children;
 

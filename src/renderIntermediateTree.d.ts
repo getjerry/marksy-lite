@@ -1,12 +1,17 @@
 import { MarksyIntermediatePack } from '../index';
 import * as React from 'react';
 
-type Toc = {
+export type MarksyTocItem = {
   id: string,
   title: string,
   level: number,
-  children?: [],
+  children?: MarksyTocItem[],
 }
 
-declare const renderIntermediateTree: (treeWrap: MarksyIntermediatePack, options?: unknown, context?: unknown) => { tree: React.ReactNode, toc: Toc };
+declare const renderIntermediateTree: (treeWrap: MarksyIntermediatePack,
+                                       options?: unknown,
+                                       context?: unknown) => {
+  tree: React.ReactNode,
+  toc: MarksyTocItem[]
+};
 export { renderIntermediateTree };

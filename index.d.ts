@@ -1,3 +1,5 @@
+import { MarksyTocItem } from './src/renderIntermediateTree';
+
 type NodeType = string;
 
 type NodeProps = unknown;
@@ -17,3 +19,5 @@ type Compiler = (content: string) => any;
 type MarksyFunction = (options: any) => Compiler;
 declare const marksy: MarksyFunction;
 export default marksy;
+
+export { MarksyTocItem };

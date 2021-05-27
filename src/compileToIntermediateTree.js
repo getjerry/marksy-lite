@@ -45,7 +45,7 @@ function createRenderer(tracker) {
     // eslint-disable-next-line no-param-reassign
     tracker.elements[elementId] = {
       tag,
-      props: processedProps,
+      ...(processedProps === null || processedProps === undefined ? {} : { props: processedProps }),
       ...(processedChildren === null || processedChildren === undefined
         ? {}
         : { children: processedChildren }),

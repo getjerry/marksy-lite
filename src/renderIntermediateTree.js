@@ -61,9 +61,15 @@ export function renderIntermediateTree(treeWrap = { tree: [] }, options = {}, co
         }
         return null;
       }
+      if (options.elements?.code) {
+        return null;
+      }
       return CodeComponent(options)({ code, language });
     },
     codespan: (props, children, elementId) => {
+      if (options.elements?.codespan) {
+        return null;
+      }
       return options.createElement(
         'code',
         {
@@ -142,10 +148,15 @@ export function renderIntermediateTree(treeWrap = { tree: [] }, options = {}, co
         return children;
       }
 
+      if (specialRenderers[type]) {
+        const result = specialRenderers[type](props, children);
+        if (result) {
+          return result;
+        }
+      }
+
       if (options.elements?.[type]) {
         customTagRenderer = options.elements[type];
-      } else if (specialRenderers[type]) {
-        return specialRenderers[type](props, children, elementId);
       }
 
       return options.createElement(

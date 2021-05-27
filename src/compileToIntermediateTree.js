@@ -11,7 +11,6 @@ function createRenderer(tracker) {
     const contentArray = content.split(/(\{\{.*?\}\})/);
     const extractedElements = contentArray
       .map(text => {
-        console.log('text', text);
         const elementIdMatch = text.match(/\{\{(.*)\}\}/);
         if (elementIdMatch) {
           tracker.tree.splice(tracker.tree.indexOf(tracker.elements[elementIdMatch[1]]), 1);

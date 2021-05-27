@@ -1,6 +1,6 @@
 {
-  "name": "marksy-lite",
-  "version": "8.1.1",
+  "name": "@getjerry/marksy-lite",
+  "version": "8.1.11",
   "description": "Convert markdown into react components",
   "keywords": [
     "convert",
@@ -32,8 +32,8 @@
     "test": "jest"
   },
   "dependencies": {
-    "he": "^1.2.0",
-    "marked": "^1.1.1"
+    "he": "1.2.0",
+    "marked": "1.2.7"
   },
   "devDependencies": {
     "@babel/cli": "^7.0.0",

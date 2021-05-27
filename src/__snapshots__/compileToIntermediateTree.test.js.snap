@@ -1,5 +1,1015 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`real article db: How to Remove Odors From Car Interiors 1`] = `
+Object {
+  "tree": Array [
+    Object {
+      "children": Array [
+        "You don’t have to just live with the odor when there is an unidentified stink in your car. It will take a little effort, but it is well worth it to be able to get in your car without thinking, “ew, why does it smell like that in here?” All you have to do is find the source, clean it up, then give your car a good cleaning – which it probably needs anyway.",
+      ],
+      "tag": "p",
+    },
+    Object {
+      "props": Object {
+        "key": "md_1",
+        "level": 3,
+        "text": "Remove the cause of the odor",
+      },
+      "tag": "heading",
+    },
+    Object {
+      "children": Array [
+        Object {
+          "children": Array [
+            "Materials Needed",
+          ],
+          "tag": "strong",
+        },
+      ],
+      "tag": "p",
+    },
+    Object {
+      "children": Array [
+        Object {
+          "children": Array [
+            "Paper towels",
+          ],
+          "tag": "li",
+        },
+        Object {
+          "children": Array [
+            "Plastic utensil or putty knife",
+          ],
+          "tag": "li",
+        },
+      ],
+      "tag": "ul",
+    },
+    Object {
+      "children": Array [
+        Object {
+          "children": Array [
+            "Step 1: Determine where the odor is coming from",
+          ],
+          "tag": "strong",
+        },
+        ". It could be leftover residue from an old milk or juice spill, a half-eaten piece of fruit, or a sippy cup with a little curdled milk left in the bottom.",
+      ],
+      "tag": "p",
+    },
+    Object {
+      "children": Array [
+        Object {
+          "children": Array [
+            "Step 2: Remove the cause of the odor",
+          ],
+          "tag": "strong",
+        },
+        ". Pick it up with paper towels or scrape it off with a plastic utensil or putty knife.",
+      ],
+      "tag": "p",
+    },
+    Object {
+      "props": Object {
+        "key": "md_11",
+        "level": 3,
+        "text": "Clean the odor-causing spill",
+      },
+      "tag": "heading",
+    },
+    Object {
+      "children": Array [
+        Object {
+          "children": Array [
+            "Materials Needed",
+          ],
+          "tag": "strong",
+        },
+      ],
+      "tag": "p",
+    },
+    Object {
+      "children": Array [
+        Object {
+          "children": Array [
+            "Baking soda",
+          ],
+          "tag": "li",
+        },
+        Object {
+          "children": Array [
+            "Bucket",
+          ],
+          "tag": "li",
+        },
+        Object {
+          "children": Array [
+            "Dish soap",
+          ],
+          "tag": "li",
+        },
+        Object {
+          "children": Array [
+            "Distilled vinegar",
+          ],
+          "tag": "li",
+        },
+        Object {
+          "children": Array [
+            "Hot water",
+          ],
+          "tag": "li",
+        },
+        Object {
+          "children": Array [
+            "Towels",
+          ],
+          "tag": "li",
+        },
+        Object {
+          "children": Array [
+            "Vacuum",
+          ],
+          "tag": "li",
+        },
+        Object {
+          "children": Array [
+            "Washcloth or clean sponge",
+          ],
+          "tag": "li",
+        },
+      ],
+      "tag": "ul",
+    },
+    Object {
+      "children": Array [
+        Object {
+          "children": Array [
+            "Step 1: Combine 1 cup of vinegar, 1 teaspoon of dish soap, and 1 gallon of hot water in a bucket",
+          ],
+          "tag": "strong",
+        },
+        ".",
+      ],
+      "tag": "p",
+    },
+    Object {
+      "children": Array [
+        "**Step 2: Put on some rubber dishwashing gloves and apply the solution to the source of the odor **.",
+      ],
+      "tag": "p",
+    },
+    Object {
+      "children": Array [
+        Object {
+          "children": Array [
+            "Step 3: Rub the solution into the spot with a scrub brush or sponge",
+          ],
+          "tag": "strong",
+        },
+        ". Let it work for about half an hour.",
+      ],
+      "tag": "p",
+    },
+    Object {
+      "children": Array [
+        Object {
+          "children": Array [
+            "Step 4: Soak up the dirty vinegar solution with a towel",
+          ],
+          "tag": "strong",
+        },
+        ".",
+      ],
+      "tag": "p",
+    },
+    Object {
+      "children": Array [
+        Object {
+          "children": Array [
+            "Step 5: Pour baking soda on the stinky spot",
+          ],
+          "tag": "strong",
+        },
+        ". Apply it as heavily as possible. A 1/4-inch thickness or more is best. Leave it there for as long as possible. Overnight is good but several days is better.",
+      ],
+      "tag": "p",
+    },
+    Object {
+      "children": Array [
+        Object {
+          "children": Array [
+            "Step 6: Vacuum up the baking soda",
+          ],
+          "tag": "strong",
+        },
+        ". Use a high-powered wet/dry vacuum if possible. If you only have a regular household vacuum, empty the canister or replace the bag before you use it.",
+      ],
+      "tag": "p",
+    },
+    Object {
+      "children": Array [
+        Object {
+          "children": Array [
+            "Step 7: Repeat steps 5 and 6, if the odor lingers",
+          ],
+          "tag": "strong",
+        },
+        ".",
+      ],
+      "tag": "p",
+    },
+    Object {
+      "children": Array [
+        "**Step 8: Put the windows down and leave the car outdoors, if you can, to let it air out **.",
+      ],
+      "tag": "p",
+    },
+    Object {
+      "props": Object {
+        "key": "md_37",
+        "level": 3,
+        "text": "Clean the entire interior of your car",
+      },
+      "tag": "heading",
+    },
+    Object {
+      "children": Array [
+        "Now it’s time to give your car’s interior a ",
+        Object {
+          "children": Array [
+            "thorough cleaning",
+          ],
+          "props": Object {
+            "href": "https://getjerry.com/advice/how-to-do-a-thorough-car-interior-cleaning-by-amber-dowler",
+            "key": "md_38",
+            "title": null,
+          },
+          "tag": "a",
+        },
+        ". At this point, you can also tackle ",
+        Object {
+          "children": Array [
+            "grease and oil stains",
+          ],
+          "props": Object {
+            "href": "https://getjerry.com/advice/how-to-remove-grease-and-oil-from-a-car-interior-by-mary-kurz",
+            "key": "md_39",
+            "title": null,
+          },
+          "tag": "a",
+        },
+        ", ",
+        Object {
+          "children": Array [
+            "windows",
+          ],
+          "props": Object {
+            "href": "https://getjerry.com/advice/how-to-clean-the-inside-of-a-car-windshield-by-cheryl-knight",
+            "key": "md_40",
+            "title": null,
+          },
+          "tag": "a",
+        },
+        ", and, once you’re done, consider installing ",
+        Object {
+          "children": Array [
+            "car seat covers",
+          ],
+          "props": Object {
+            "href": "https://getjerry.com/advice/how-to-buy-install-and-clean-car-seat-covers-by-rochelle-miller-hernandez",
+            "key": "md_41",
+            "title": null,
+          },
+          "tag": "a",
+        },
+        ".",
+      ],
+      "tag": "p",
+    },
+    Object {
+      "children": Array [
+        Object {
+          "children": Array [
+            "Materials Needed",
+          ],
+          "tag": "strong",
+        },
+      ],
+      "tag": "p",
+    },
+    Object {
+      "children": Array [
+        Object {
+          "children": Array [
+            "Automotive carpet and upholstery cleaner (Available in auto parts stores and online.)",
+          ],
+          "tag": "li",
+        },
+        Object {
+          "children": Array [
+            "Towels",
+          ],
+          "tag": "li",
+        },
+        Object {
+          "children": Array [
+            "Washcloth or clean sponge",
+          ],
+          "tag": "li",
+        },
+        Object {
+          "children": Array [
+            "Vacuum",
+          ],
+          "tag": "li",
+        },
+      ],
+      "tag": "ul",
+    },
+    Object {
+      "children": Array [
+        Object {
+          "children": Array [
+            "Step 1: Take everything out of the car",
+          ],
+          "tag": "strong",
+        },
+        ". Remove the floor mats, too.",
+      ],
+      "tag": "p",
+    },
+    Object {
+      "children": Array [
+        Object {
+          "children": Array [
+            "Step 2: Vacuum the entire car, top to bottom",
+          ],
+          "tag": "strong",
+        },
+        ".",
+      ],
+      "tag": "p",
+    },
+    Object {
+      "children": Array [
+        Object {
+          "children": Array [
+            "Step 3: Clean the carpet, upholstery, and headliner/roof upholstery with automotive carpet and upholstery cleaner",
+          ],
+          "tag": "strong",
+        },
+        ". Follow the manufacturer’s instructions. ",
+      ],
+      "tag": "p",
+    },
+    Object {
+      "children": Array [
+        "For best results, get an all-purpose cleaning/odor-eliminating solution like ",
+        Object {
+          "children": Array [
+            "Turtle Wax’s Clean and Fresh Kit",
+          ],
+          "props": Object {
+            "href": "https://www.amazon.com/dp/B072HKH61F?psc=1",
+            "key": "md_56",
+            "title": null,
+          },
+          "tag": "a",
+        },
+        ". It even comes with a special microfiber towel to use.",
+      ],
+      "tag": "p",
+    },
+    Object {
+      "children": Array [
+        Object {
+          "children": Array [
+            "Step 4: Let the car sit outdoors with the windows open for as long as you can to really air it out",
+          ],
+          "tag": "strong",
+        },
+        ". Do not leave the doors open, though. The dome light might run down the battery.",
+      ],
+      "tag": "p",
+    },
+    Object {
+      "props": Object {
+        "key": "md_60",
+        "level": 3,
+        "text": "Mask the odor until it eventually dissipates naturally – sometimes it just takes time",
+      },
+      "tag": "heading",
+    },
+    Object {
+      "children": Array [
+        Object {
+          "children": Array [
+            "Materials Needed",
+          ],
+          "tag": "strong",
+        },
+      ],
+      "tag": "p",
+    },
+    Object {
+      "children": Array [
+        Object {
+          "children": Array [
+            "Essential oil diffuser",
+          ],
+          "tag": "li",
+        },
+        Object {
+          "children": Array [
+            "Odor-absorbing substance",
+          ],
+          "tag": "li",
+        },
+        Object {
+          "children": Array [
+            "Upholstery odor remover",
+          ],
+          "tag": "li",
+        },
+      ],
+      "tag": "ul",
+    },
+    Object {
+      "children": Array [
+        Object {
+          "children": Array [
+            "Step 1: Spray the upholstery, headliner, and carpet with a spray odor neutralizer",
+          ],
+          "tag": "strong",
+        },
+        ".",
+      ],
+      "tag": "p",
+    },
+    Object {
+      "children": Array [
+        Object {
+          "children": Array [
+            "Step 2: Use an essential oil diffuser in your car",
+          ],
+          "tag": "strong",
+        },
+        ". You can choose your favorite essential oil fragrance or use a different essential oil each day. ",
+        Object {
+          "children": Array [
+            "Amazon",
+          ],
+          "props": Object {
+            "href": "https://www.amazon.com/s/ref=nb_sb_ss_i_1_30?url=search-alias%3Dautomotive&field-keywords=essential+oil+diffuser+for+car&sprefix=essential+oil+diffuser+for+car%2Cautomotive%2C208&crid=P9R2ST8MI037",
+            "key": "md_70",
+            "title": null,
+          },
+          "tag": "a",
+        },
+        " has a nice selection of diffusers to choose from and sells essential oils.",
+      ],
+      "tag": "p",
+    },
+    Object {
+      "children": Array [
+        Object {
+          "children": Array [
+            "Step 3: Place an odor-absorbing substance near the source of the odor",
+          ],
+          "tag": "strong",
+        },
+        ". You can pick them up at the local discount store or order them online. ",
+        Object {
+          "children": Array [
+            "MosoNatural",
+          ],
+          "props": Object {
+            "href": "http://mosonatural.com/",
+            "key": "md_73",
+            "title": null,
+          },
+          "tag": "a",
+        },
+        " sells a very effective product online.",
+      ],
+      "tag": "p",
+    },
+    Object {
+      "children": Array [
+        "We all know how distracting the stink from a little spilled milk can be, so no doubt you’ll be glad you have it removed before it gets any worse. A nice-smelling car makes any trip, long or short, that much more pleasant. ",
+      ],
+      "tag": "p",
+    },
+  ],
+}
+`;
+
+exports[`real article db-lr: How to Remove Odors From Car Interiors 1`] = `
+Object {
+  "tree": Array [
+    Object {
+      "children": Array [
+        "You don’t have to just live with the odor when there is an unidentified stink in your car. It will take a little effort, but it is well worth it to be able to get in your car without thinking, “ew, why does it smell like that in here?” All you have to do is find the source, clean it up, then give your car a good cleaning – which it probably needs anyway.",
+      ],
+      "tag": "p",
+    },
+    Object {
+      "props": Object {
+        "key": "md_1",
+        "level": 3,
+        "text": "Remove the cause of the odor",
+      },
+      "tag": "heading",
+    },
+    Object {
+      "children": Array [
+        Object {
+          "children": Array [
+            "Materials Needed",
+          ],
+          "tag": "strong",
+        },
+      ],
+      "tag": "p",
+    },
+    Object {
+      "children": Array [
+        Object {
+          "children": Array [
+            "Paper towels",
+          ],
+          "tag": "li",
+        },
+        Object {
+          "children": Array [
+            "Plastic utensil or putty knife",
+          ],
+          "tag": "li",
+        },
+      ],
+      "tag": "ul",
+    },
+    Object {
+      "children": Array [
+        Object {
+          "children": Array [
+            "Step 1: Determine where the odor is coming from",
+          ],
+          "tag": "strong",
+        },
+        ". It could be leftover residue from an old milk or juice spill, a half-eaten piece of fruit, or a sippy cup with a little curdled milk left in the bottom.",
+      ],
+      "tag": "p",
+    },
+    Object {
+      "children": Array [
+        Object {
+          "children": Array [
+            "Step 2: Remove the cause of the odor",
+          ],
+          "tag": "strong",
+        },
+        ". Pick it up with paper towels or scrape it off with a plastic utensil or putty knife.",
+      ],
+      "tag": "p",
+    },
+    Object {
+      "props": Object {
+        "key": "md_11",
+        "level": 3,
+        "text": "Clean the odor-causing spill",
+      },
+      "tag": "heading",
+    },
+    Object {
+      "children": Array [
+        Object {
+          "children": Array [
+            "Materials Needed",
+          ],
+          "tag": "strong",
+        },
+      ],
+      "tag": "p",
+    },
+    Object {
+      "children": Array [
+        Object {
+          "children": Array [
+            "Baking soda",
+          ],
+          "tag": "li",
+        },
+        Object {
+          "children": Array [
+            "Bucket",
+          ],
+          "tag": "li",
+        },
+        Object {
+          "children": Array [
+            "Dish soap",
+          ],
+          "tag": "li",
+        },
+        Object {
+          "children": Array [
+            "Distilled vinegar",
+          ],
+          "tag": "li",
+        },
+        Object {
+          "children": Array [
+            "Hot water",
+          ],
+          "tag": "li",
+        },
+        Object {
+          "children": Array [
+            "Towels",
+          ],
+          "tag": "li",
+        },
+        Object {
+          "children": Array [
+            "Vacuum",
+          ],
+          "tag": "li",
+        },
+        Object {
+          "children": Array [
+            "Washcloth or clean sponge",
+          ],
+          "tag": "li",
+        },
+      ],
+      "tag": "ul",
+    },
+    Object {
+      "children": Array [
+        Object {
+          "children": Array [
+            "Step 1: Combine 1 cup of vinegar, 1 teaspoon of dish soap, and 1 gallon of hot water in a bucket",
+          ],
+          "tag": "strong",
+        },
+        ".",
+      ],
+      "tag": "p",
+    },
+    Object {
+      "children": Array [
+        "**Step 2: Put on some rubber dishwashing gloves and apply the solution to the source of the odor **.",
+      ],
+      "tag": "p",
+    },
+    Object {
+      "children": Array [
+        Object {
+          "children": Array [
+            "Step 3: Rub the solution into the spot with a scrub brush or sponge",
+          ],
+          "tag": "strong",
+        },
+        ". Let it work for about half an hour.",
+      ],
+      "tag": "p",
+    },
+    Object {
+      "children": Array [
+        Object {
+          "children": Array [
+            "Step 4: Soak up the dirty vinegar solution with a towel",
+          ],
+          "tag": "strong",
+        },
+        ".",
+      ],
+      "tag": "p",
+    },
+    Object {
+      "children": Array [
+        Object {
+          "children": Array [
+            "Step 5: Pour baking soda on the stinky spot",
+          ],
+          "tag": "strong",
+        },
+        ". Apply it as heavily as possible. A 1/4-inch thickness or more is best. Leave it there for as long as possible. Overnight is good but several days is better.",
+      ],
+      "tag": "p",
+    },
+    Object {
+      "children": Array [
+        Object {
+          "children": Array [
+            "Step 6: Vacuum up the baking soda",
+          ],
+          "tag": "strong",
+        },
+        ". Use a high-powered wet/dry vacuum if possible. If you only have a regular household vacuum, empty the canister or replace the bag before you use it.",
+      ],
+      "tag": "p",
+    },
+    Object {
+      "children": Array [
+        Object {
+          "children": Array [
+            "Step 7: Repeat steps 5 and 6, if the odor lingers",
+          ],
+          "tag": "strong",
+        },
+        ".",
+      ],
+      "tag": "p",
+    },
+    Object {
+      "children": Array [
+        "**Step 8: Put the windows down and leave the car outdoors, if you can, to let it air out **.",
+      ],
+      "tag": "p",
+    },
+    Object {
+      "props": Object {
+        "key": "md_37",
+        "level": 3,
+        "text": "Clean the entire interior of your car",
+      },
+      "tag": "heading",
+    },
+    Object {
+      "children": Array [
+        "Now it’s time to give your car’s interior a ",
+        Object {
+          "children": Array [
+            "thorough cleaning",
+          ],
+          "props": Object {
+            "href": "https://getjerry.com/advice/how-to-do-a-thorough-car-interior-cleaning-by-amber-dowler",
+            "key": "md_38",
+            "title": null,
+          },
+          "tag": "a",
+        },
+        ". At this point, you can also tackle ",
+        Object {
+          "children": Array [
+            "grease and oil stains",
+          ],
+          "props": Object {
+            "href": "https://getjerry.com/advice/how-to-remove-grease-and-oil-from-a-car-interior-by-mary-kurz",
+            "key": "md_39",
+            "title": null,
+          },
+          "tag": "a",
+        },
+        ", ",
+        Object {
+          "children": Array [
+            "windows",
+          ],
+          "props": Object {
+            "href": "https://getjerry.com/advice/how-to-clean-the-inside-of-a-car-windshield-by-cheryl-knight",
+            "key": "md_40",
+            "title": null,
+          },
+          "tag": "a",
+        },
+        ", and, once you’re done, consider installing ",
+        Object {
+          "children": Array [
+            "car seat covers",
+          ],
+          "props": Object {
+            "href": "https://getjerry.com/advice/how-to-buy-install-and-clean-car-seat-covers-by-rochelle-miller-hernandez",
+            "key": "md_41",
+            "title": null,
+          },
+          "tag": "a",
+        },
+        ".",
+      ],
+      "tag": "p",
+    },
+    Object {
+      "children": Array [
+        Object {
+          "children": Array [
+            "Materials Needed",
+          ],
+          "tag": "strong",
+        },
+      ],
+      "tag": "p",
+    },
+    Object {
+      "children": Array [
+        Object {
+          "children": Array [
+            "Automotive carpet and upholstery cleaner (Available in auto parts stores and online.)",
+          ],
+          "tag": "li",
+        },
+        Object {
+          "children": Array [
+            "Towels",
+          ],
+          "tag": "li",
+        },
+        Object {
+          "children": Array [
+            "Washcloth or clean sponge",
+          ],
+          "tag": "li",
+        },
+        Object {
+          "children": Array [
+            "Vacuum",
+          ],
+          "tag": "li",
+        },
+      ],
+      "tag": "ul",
+    },
+    Object {
+      "children": Array [
+        Object {
+          "children": Array [
+            "Step 1: Take everything out of the car",
+          ],
+          "tag": "strong",
+        },
+        ". Remove the floor mats, too.",
+      ],
+      "tag": "p",
+    },
+    Object {
+      "children": Array [
+        Object {
+          "children": Array [
+            "Step 2: Vacuum the entire car, top to bottom",
+          ],
+          "tag": "strong",
+        },
+        ".",
+      ],
+      "tag": "p",
+    },
+    Object {
+      "children": Array [
+        Object {
+          "children": Array [
+            "Step 3: Clean the carpet, upholstery, and headliner/roof upholstery with automotive carpet and upholstery cleaner",
+          ],
+          "tag": "strong",
+        },
+        ". Follow the manufacturer’s instructions. ",
+      ],
+      "tag": "p",
+    },
+    Object {
+      "children": Array [
+        "For best results, get an all-purpose cleaning/odor-eliminating solution like ",
+        Object {
+          "children": Array [
+            "Turtle Wax’s Clean and Fresh Kit",
+          ],
+          "props": Object {
+            "href": "https://www.amazon.com/dp/B072HKH61F?psc=1",
+            "key": "md_56",
+            "title": null,
+          },
+          "tag": "a",
+        },
+        ". It even comes with a special microfiber towel to use.",
+      ],
+      "tag": "p",
+    },
+    Object {
+      "children": Array [
+        Object {
+          "children": Array [
+            "Step 4: Let the car sit outdoors with the windows open for as long as you can to really air it out",
+          ],
+          "tag": "strong",
+        },
+        ". Do not leave the doors open, though. The dome light might run down the battery.",
+      ],
+      "tag": "p",
+    },
+    Object {
+      "props": Object {
+        "key": "md_60",
+        "level": 3,
+        "text": "Mask the odor until it eventually dissipates naturally – sometimes it just takes time",
+      },
+      "tag": "heading",
+    },
+    Object {
+      "children": Array [
+        Object {
+          "children": Array [
+            "Materials Needed",
+          ],
+          "tag": "strong",
+        },
+      ],
+      "tag": "p",
+    },
+    Object {
+      "children": Array [
+        Object {
+          "children": Array [
+            "Essential oil diffuser",
+          ],
+          "tag": "li",
+        },
+        Object {
+          "children": Array [
+            "Odor-absorbing substance",
+          ],
+          "tag": "li",
+        },
+        Object {
+          "children": Array [
+            "Upholstery odor remover",
+          ],
+          "tag": "li",
+        },
+      ],
+      "tag": "ul",
+    },
+    Object {
+      "children": Array [
+        Object {
+          "children": Array [
+            "Step 1: Spray the upholstery, headliner, and carpet with a spray odor neutralizer",
+          ],
+          "tag": "strong",
+        },
+        ".",
+      ],
+      "tag": "p",
+    },
+    Object {
+      "children": Array [
+        Object {
+          "children": Array [
+            "Step 2: Use an essential oil diffuser in your car",
+          ],
+          "tag": "strong",
+        },
+        ". You can choose your favorite essential oil fragrance or use a different essential oil each day. ",
+        Object {
+          "children": Array [
+            "Amazon",
+          ],
+          "props": Object {
+            "href": "https://www.amazon.com/s/ref=nb_sb_ss_i_1_30?url=search-alias%3Dautomotive&field-keywords=essential+oil+diffuser+for+car&sprefix=essential+oil+diffuser+for+car%2Cautomotive%2C208&crid=P9R2ST8MI037",
+            "key": "md_70",
+            "title": null,
+          },
+          "tag": "a",
+        },
+        " has a nice selection of diffusers to choose from and sells essential oils.",
+      ],
+      "tag": "p",
+    },
+    Object {
+      "children": Array [
+        Object {
+          "children": Array [
+            "Step 3: Place an odor-absorbing substance near the source of the odor",
+          ],
+          "tag": "strong",
+        },
+        ". You can pick them up at the local discount store or order them online. ",
+        Object {
+          "children": Array [
+            "MosoNatural",
+          ],
+          "props": Object {
+            "href": "http://mosonatural.com/",
+            "key": "md_73",
+            "title": null,
+          },
+          "tag": "a",
+        },
+        " sells a very effective product online.",
+      ],
+      "tag": "p",
+    },
+    Object {
+      "children": Array [
+        "We all know how distracting the stink from a little spilled milk can be, so no doubt you’ll be glad you have it removed before it gets any worse. A nice-smelling car makes any trip, long or short, that much more pleasant. ",
+      ],
+      "tag": "p",
+    },
+  ],
+}
+`;
+
 exports[`should allow injecting context to elements 1`] = `
 Object {
   "tree": Array [

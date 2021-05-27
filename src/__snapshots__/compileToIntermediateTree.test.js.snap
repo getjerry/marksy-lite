@@ -4,7 +4,6 @@ exports[`should allow injecting context to elements 1`] = `
 Object {
   "tree": Array [
     Object {
-      "children": null,
       "props": Object {
         "key": "md_0",
         "level": 1,
@@ -20,7 +19,6 @@ exports[`should be able to combine in compilation 1`] = `
 Object {
   "tree": Array [
     Object {
-      "children": null,
       "props": Object {
         "key": "md_0",
         "level": 1,
@@ -30,7 +28,6 @@ Object {
     },
     Object {
       "children": Array [
-        null,
         Object {
           "children": Array [
             "foo",
@@ -38,7 +35,6 @@ Object {
           "props": null,
           "tag": "li",
         },
-        null,
       ],
       "props": null,
       "tag": "ul",
@@ -67,7 +63,6 @@ Object {
           "props": null,
           "tag": "codespan",
         },
-        null,
       ],
       "props": null,
       "tag": "p",
@@ -80,7 +75,6 @@ exports[`should be able to compile components using H and marksy language 1`] = 
 Object {
   "tree": Array [
     Object {
-      "children": null,
       "props": Object {
         "code": "h(Test)",
         "key": "md_0",
@@ -96,7 +90,6 @@ exports[`should be able to compile headers 1`] = `
 Object {
   "tree": Array [
     Object {
-      "children": null,
       "props": Object {
         "key": "md_0",
         "level": 1,
@@ -105,7 +98,6 @@ Object {
       "tag": "heading",
     },
     Object {
-      "children": null,
       "props": Object {
         "key": "md_1",
         "level": 2,
@@ -114,7 +106,6 @@ Object {
       "tag": "heading",
     },
     Object {
-      "children": null,
       "props": Object {
         "key": "md_2",
         "level": 3,
@@ -123,7 +114,6 @@ Object {
       "tag": "heading",
     },
     Object {
-      "children": null,
       "props": Object {
         "key": "md_3",
         "level": 4,
@@ -139,7 +129,6 @@ exports[`should be able to compile html 1`] = `
 Object {
   "tree": Array [
     Object {
-      "children": null,
       "props": Object {
         "dangerouslySetInnerHTML": Object {
           "__html": "<div>hello</div>",
@@ -157,9 +146,7 @@ Object {
   "tree": Array [
     Object {
       "children": Array [
-        null,
         Object {
-          "children": null,
           "props": Object {
             "alt": "test",
             "key": "md_0",
@@ -167,7 +154,6 @@ Object {
           },
           "tag": "img",
         },
-        null,
       ],
       "props": null,
       "tag": "p",
@@ -189,7 +175,6 @@ Object {
           "props": null,
           "tag": "em",
         },
-        null,
       ],
       "props": null,
       "tag": "p",
@@ -203,7 +188,6 @@ Object {
   "tree": Array [
     Object {
       "children": Array [
-        null,
         Object {
           "children": Array [
             "my link",
@@ -215,7 +199,6 @@ Object {
           },
           "tag": "a",
         },
-        null,
       ],
       "props": null,
       "tag": "p",
@@ -229,7 +212,6 @@ Object {
   "tree": Array [
     Object {
       "children": Array [
-        null,
         Object {
           "children": Array [
             "foo",
@@ -237,7 +219,6 @@ Object {
           "props": null,
           "tag": "li",
         },
-        null,
         Object {
           "children": Array [
             "bar",
@@ -245,7 +226,6 @@ Object {
           "props": null,
           "tag": "li",
         },
-        null,
       ],
       "props": null,
       "tag": "ul",
@@ -258,7 +238,6 @@ exports[`should be able to compile multiple html 1`] = `
 Object {
   "tree": Array [
     Object {
-      "children": null,
       "props": Object {
         "dangerouslySetInnerHTML": Object {
           "__html": "<div>hello</div>
@@ -278,13 +257,11 @@ Object {
   "tree": Array [
     Object {
       "children": Array [
-        null,
         Object {
           "children": Array [
             "Colors",
             Object {
               "children": Array [
-                null,
                 Object {
                   "children": Array [
                     "Red",
@@ -292,7 +269,6 @@ Object {
                   "props": null,
                   "tag": "li",
                 },
-                null,
                 Object {
                   "children": Array [
                     "Blue",
@@ -300,23 +276,19 @@ Object {
                   "props": null,
                   "tag": "li",
                 },
-                null,
               ],
               "props": null,
               "tag": "ul",
             },
-            null,
           ],
           "props": null,
           "tag": "li",
         },
-        null,
         Object {
           "children": Array [
             "Shape",
             Object {
               "children": Array [
-                null,
                 Object {
                   "children": Array [
                     "Triangle",
@@ -324,7 +296,6 @@ Object {
                   "props": null,
                   "tag": "li",
                 },
-                null,
                 Object {
                   "children": Array [
                     "Rectangle",
@@ -332,17 +303,14 @@ Object {
                   "props": null,
                   "tag": "li",
                 },
-                null,
               ],
               "props": null,
               "tag": "ul",
             },
-            null,
           ],
           "props": null,
           "tag": "li",
         },
-        null,
       ],
       "props": null,
       "tag": "ul",
@@ -356,7 +324,6 @@ Object {
   "tree": Array [
     Object {
       "children": Array [
-        null,
         Object {
           "children": Array [
             "foo",
@@ -364,7 +331,6 @@ Object {
           "props": null,
           "tag": "li",
         },
-        null,
         Object {
           "children": Array [
             "bar",
@@ -372,7 +338,6 @@ Object {
           "props": null,
           "tag": "li",
         },
-        null,
       ],
       "props": null,
       "tag": "ol",
@@ -388,7 +353,6 @@ Object {
       "children": Array [
         "  ",
         Object {
-          "children": null,
           "props": Object {
             "alt": "test",
             "key": "md_0",
@@ -396,13 +360,11 @@ Object {
           },
           "tag": "img",
         },
-        null,
       ],
       "props": null,
       "tag": "p",
     },
     Object {
-      "children": null,
       "props": Object {
         "dangerouslySetInnerHTML": Object {
           "__html": "  <div><br /></div>
@@ -414,7 +376,6 @@ Object {
       "tag": "div",
     },
     Object {
-      "children": null,
       "props": Object {
         "dangerouslySetInnerHTML": Object {
           "__html": "  <hr/>
@@ -426,7 +387,6 @@ Object {
       "tag": "div",
     },
     Object {
-      "children": null,
       "props": Object {
         "dangerouslySetInnerHTML": Object {
           "__html": "  <input type='text' />
@@ -453,7 +413,6 @@ Object {
           "props": null,
           "tag": "strong",
         },
-        null,
       ],
       "props": null,
       "tag": "p",
@@ -468,13 +427,10 @@ Object {
     Object {
       "children": Array [
         Array [
-          null,
           Object {
             "children": Array [
-              null,
               Object {
                 "children": Array [
-                  null,
                   Object {
                     "children": Array [
                       "Tables",
@@ -485,7 +441,6 @@ Object {
                     },
                     "tag": "th",
                   },
-                  null,
                   Object {
                     "children": Array [
                       "Are",
@@ -496,7 +451,6 @@ Object {
                     },
                     "tag": "th",
                   },
-                  null,
                   Object {
                     "children": Array [
                       "Cool",
@@ -507,26 +461,20 @@ Object {
                     },
                     "tag": "th",
                   },
-                  null,
                 ],
                 "props": null,
                 "tag": "tr",
               },
-              null,
             ],
             "props": null,
             "tag": "thead",
           },
-          null,
         ],
         Array [
-          null,
           Object {
             "children": Array [
-              null,
               Object {
                 "children": Array [
-                  null,
                   Object {
                     "children": Array [
                       "col 3 is",
@@ -537,7 +485,6 @@ Object {
                     },
                     "tag": "td",
                   },
-                  null,
                   Object {
                     "children": Array [
                       "right-aligned",
@@ -548,7 +495,6 @@ Object {
                     },
                     "tag": "td",
                   },
-                  null,
                   Object {
                     "children": Array [
                       "$1600",
@@ -559,15 +505,12 @@ Object {
                     },
                     "tag": "td",
                   },
-                  null,
                 ],
                 "props": null,
                 "tag": "tr",
               },
-              null,
               Object {
                 "children": Array [
-                  null,
                   Object {
                     "children": Array [
                       "col 2 is",
@@ -578,7 +521,6 @@ Object {
                     },
                     "tag": "td",
                   },
-                  null,
                   Object {
                     "children": Array [
                       "centered",
@@ -589,7 +531,6 @@ Object {
                     },
                     "tag": "td",
                   },
-                  null,
                   Object {
                     "children": Array [
                       "$12",
@@ -600,15 +541,12 @@ Object {
                     },
                     "tag": "td",
                   },
-                  null,
                 ],
                 "props": null,
                 "tag": "tr",
               },
-              null,
               Object {
                 "children": Array [
-                  null,
                   Object {
                     "children": Array [
                       "zebra stripes",
@@ -619,7 +557,6 @@ Object {
                     },
                     "tag": "td",
                   },
-                  null,
                   Object {
                     "children": Array [
                       "are neat",
@@ -630,7 +567,6 @@ Object {
                     },
                     "tag": "td",
                   },
-                  null,
                   Object {
                     "children": Array [
                       "$1",
@@ -641,17 +577,14 @@ Object {
                     },
                     "tag": "td",
                   },
-                  null,
                 ],
                 "props": null,
                 "tag": "tr",
               },
-              null,
             ],
             "props": null,
             "tag": "tbody",
           },
-          null,
         ],
       ],
       "props": null,
@@ -679,7 +612,6 @@ exports[`should handle same name nested headers 1`] = `
 Object {
   "tree": Array [
     Object {
-      "children": null,
       "props": Object {
         "key": "md_0",
         "level": 1,
@@ -688,7 +620,6 @@ Object {
       "tag": "heading",
     },
     Object {
-      "children": null,
       "props": Object {
         "key": "md_1",
         "level": 2,
@@ -697,7 +628,6 @@ Object {
       "tag": "heading",
     },
     Object {
-      "children": null,
       "props": Object {
         "key": "md_2",
         "level": 1,
@@ -706,7 +636,6 @@ Object {
       "tag": "heading",
     },
     Object {
-      "children": null,
       "props": Object {
         "key": "md_3",
         "level": 2,

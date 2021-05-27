@@ -9,18 +9,21 @@ function createRenderer(tracker) {
       return content;
     }
     const contentArray = content.split(/(\{\{.*?\}\})/);
-    const extractedElements = contentArray.map(text => {
-      const elementIdMatch = text.match(/\{\{(.*)\}\}/);
-      if (elementIdMatch) {
-        tracker.tree.splice(tracker.tree.indexOf(tracker.elements[elementIdMatch[1]]), 1);
-        return tracker.elements[elementIdMatch[1]];
-      }
-      if (text !== '') {
-        return he.decode(text);
-      }
+    const extractedElements = contentArray
+      .map(text => {
+        console.log('text', text);
+        const elementIdMatch = text.match(/\{\{(.*)\}\}/);
+        if (elementIdMatch) {
+          tracker.tree.splice(tracker.tree.indexOf(tracker.elements[elementIdMatch[1]]), 1);
+          return tracker.elements[elementIdMatch[1]];
+        }
+        if (text !== '') {
+          return he.decode(text);
+        }
 
-      return null;
-    });
+        return null;
+      })
+      .filter(one => one !== null && one !== undefined);
 
     return extractedElements;
   }
@@ -33,7 +36,7 @@ function createRenderer(tracker) {
 
     if (children) {
       processedChildren = Array.isArray(children)
-        ? children.map(populateInlineContent)
+        ? children.map(populateInlineContent).filter(one => one !== null && one !== undefined)
         : populateInlineContent(children);
     }
     if (addIdAsKey && processedProps) {
@@ -44,7 +47,9 @@ function createRenderer(tracker) {
     tracker.elements[elementId] = {
       tag,
       props: processedProps,
-      children: processedChildren,
+      ...(processedChildren === null || processedChildren === undefined
+        ? {}
+        : { children: processedChildren }),
     };
     // [tag, processedProps, processedChildren];
     tracker.tree.push(tracker.elements[elementId]);

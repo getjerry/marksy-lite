@@ -3,7 +3,7 @@ import { MarksyTocItem } from './src/renderIntermediateTree';
 type NodeType = string;
 
 type NodeProps = unknown;
-type NodeChildren = Array<MarksyIntermediateTree | string | NodeChildren>;
+type NodeChildren = Array<MarksyIntermediateTree | string | NodeChildren | null>;
 
 export type MarksyIntermediateTree = {
   tag: NodeType;

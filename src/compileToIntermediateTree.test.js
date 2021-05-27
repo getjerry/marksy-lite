@@ -8,7 +8,7 @@ import hljsJs from 'highlight.js/lib/languages/javascript';
 import hljsXml from 'highlight.js/lib/languages/xml';
 
 // eslint-disable-next-line
-import { compileToIntermediateTree } from './';
+import { compileToIntermediateTree } from './compileToIntermediateTree';
 
 hljs.registerLanguage('javascript', hljsJs);
 hljs.registerLanguage('xml', hljsXml);

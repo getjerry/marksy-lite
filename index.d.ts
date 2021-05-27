@@ -8,7 +8,7 @@ type NodeChildren = Array<MarksyIntermediateTree | string | NodeChildren>;
 export type MarksyIntermediateTree = {
   tag: NodeType;
   props: NodeProps;
-  children: NodeChildren;
+  children?: NodeChildren | null;
 };
 
 export type MarksyIntermediatePack = {

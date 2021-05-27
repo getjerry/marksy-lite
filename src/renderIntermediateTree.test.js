@@ -1,6 +1,6 @@
 /* eslint-disable react/destructuring-assignment */
 /* eslint-disable react/jsx-one-expression-per-line */
-import React, { createElement, Component } from 'react';
+import React, { Component, createElement } from 'react';
 import PropTypes from 'prop-types';
 import Preact from 'preact';
 import preactRenderToString from 'preact-render-to-string';
@@ -213,15 +213,47 @@ describe('Two step render result should be same with marksy', () => {
   });
 
   it('should produce TOC', () => {
-    const [container, containerTwo] = getTwoCompiledContainer(`
+    const content = `
 # foo
 
 ## bar
 
 ### baz
-  `);
+  `;
+    const compiled = getCompiled(content);
+    const compiled2 = getCompiledTwoStep(content);
+    expect(JSON.stringify(compiled.toc, null, 2)).toMatchSnapshot();
+    expect(compiled.toc).toStrictEqual(compiled2.toc);
 
-    expect(container.firstChild).toMatchSnapshot();
+    const [container, containerTwo] = getTwoCompiledContainer(content);
+    expect(container.firstChild).toStrictEqual(containerTwo.firstChild);
+  });
+
+  it('should produce TOC complex', () => {
+    const content = `
+# foo
+
+text
+
+## bar
+
+text
+
+# f2
+
+## f3
+
+text
+### baz
+
+## f4
+  `;
+    const compiled = getCompiled(content);
+    const compiled2 = getCompiledTwoStep(content);
+    expect(JSON.stringify(compiled.toc, null, 2)).toMatchSnapshot();
+    expect(compiled.toc).toStrictEqual(compiled2.toc);
+
+    const [container, containerTwo] = getTwoCompiledContainer(content);
     expect(container.firstChild).toStrictEqual(containerTwo.firstChild);
   });
 

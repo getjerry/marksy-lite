@@ -284,23 +284,72 @@ exports[`Two step render result should be same with marksy should handle same na
 `;
 
 exports[`Two step render result should be same with marksy should produce TOC 1`] = `
-<div>
-  <h1
-    id="foo"
-  >
-    foo
-  </h1>
-  <h2
-    id="foo-bar"
-  >
-    bar
-  </h2>
-  <h3
-    id="foo-bar-baz"
-  >
-    baz
-  </h3>
-</div>
+"[
+  {
+    \\"id\\": \\"foo\\",
+    \\"title\\": \\"foo\\",
+    \\"level\\": 1,
+    \\"children\\": [
+      {
+        \\"id\\": \\"foo-bar\\",
+        \\"title\\": \\"bar\\",
+        \\"level\\": 2,
+        \\"children\\": [
+          {
+            \\"id\\": \\"foo-bar-baz\\",
+            \\"title\\": \\"baz\\",
+            \\"level\\": 3,
+            \\"children\\": []
+          }
+        ]
+      }
+    ]
+  }
+]"
+`;
+
+exports[`Two step render result should be same with marksy should produce TOC complex 1`] = `
+"[
+  {
+    \\"id\\": \\"foo\\",
+    \\"title\\": \\"foo\\",
+    \\"level\\": 1,
+    \\"children\\": [
+      {
+        \\"id\\": \\"foo-bar\\",
+        \\"title\\": \\"bar\\",
+        \\"level\\": 2,
+        \\"children\\": [
+          {
+            \\"id\\": \\"f2\\",
+            \\"title\\": \\"f2\\",
+            \\"level\\": 1,
+            \\"children\\": []
+          }
+        ]
+      },
+      {
+        \\"id\\": \\"f2-f3\\",
+        \\"title\\": \\"f3\\",
+        \\"level\\": 2,
+        \\"children\\": [
+          {
+            \\"id\\": \\"f2-f3-baz\\",
+            \\"title\\": \\"baz\\",
+            \\"level\\": 3,
+            \\"children\\": []
+          }
+        ]
+      },
+      {
+        \\"id\\": \\"f2-f4\\",
+        \\"title\\": \\"f4\\",
+        \\"level\\": 2,
+        \\"children\\": []
+      }
+    ]
+  }
+]"
 `;
 
 exports[`Two step render result should be same with marksy should produce custom tags 1`] = `

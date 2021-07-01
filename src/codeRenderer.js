@@ -9,6 +9,7 @@ export const CodeComponent = options => props => {
         dangerouslySetInnerHTML: options.highlight
           ? { __html: options.highlight(props.language, props.code) }
           : null,
+        key: props.key,
       },
       options.highlight ? null : props.code
     );

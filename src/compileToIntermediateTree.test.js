@@ -201,6 +201,14 @@ it('should be able to compile self-closing tag', () => {
   expect(compiled).toMatchSnapshot();
 });
 
+it('should be able to handle title formats', () => {
+  const compiled = compileToIntermediateTree(`
+# **hey**
+  `);
+
+  expect(compiled).toMatchSnapshot();
+});
+
 it('real article db: How to Remove Odors From Car Interiors', () => {
   const content = `You don’t have to just live with the odor when there is an unidentified stink in your car. It will take a little effort, but it is well worth it to be able to get in your car without thinking, “ew, why does it smell like that in here?” All you have to do is find the source, clean it up, then give your car a good cleaning – which it probably needs anyway.
  

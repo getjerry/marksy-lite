@@ -7,6 +7,9 @@ Object {
       "children": Array [
         "You don’t have to just live with the odor when there is an unidentified stink in your car. It will take a little effort, but it is well worth it to be able to get in your car without thinking, “ew, why does it smell like that in here?” All you have to do is find the source, clean it up, then give your car a good cleaning – which it probably needs anyway.",
       ],
+      "props": Object {
+        "key": "md_0",
+      },
       "tag": "p",
     },
     Object {
@@ -23,9 +26,15 @@ Object {
           "children": Array [
             "Materials Needed",
           ],
+          "props": Object {
+            "key": "md_2",
+          },
           "tag": "strong",
         },
       ],
+      "props": Object {
+        "key": "md_3",
+      },
       "tag": "p",
     },
     Object {
@@ -34,15 +43,24 @@ Object {
           "children": Array [
             "Paper towels",
           ],
+          "props": Object {
+            "key": "md_4",
+          },
           "tag": "li",
         },
         Object {
           "children": Array [
             "Plastic utensil or putty knife",
           ],
+          "props": Object {
+            "key": "md_5",
+          },
           "tag": "li",
         },
       ],
+      "props": Object {
+        "key": "md_6",
+      },
       "tag": "ul",
     },
     Object {
@@ -51,10 +69,16 @@ Object {
           "children": Array [
             "Step 1: Determine where the odor is coming from",
           ],
+          "props": Object {
+            "key": "md_7",
+          },
           "tag": "strong",
         },
         ". It could be leftover residue from an old milk or juice spill, a half-eaten piece of fruit, or a sippy cup with a little curdled milk left in the bottom.",
       ],
+      "props": Object {
+        "key": "md_8",
+      },
       "tag": "p",
     },
     Object {
@@ -63,10 +87,16 @@ Object {
           "children": Array [
             "Step 2: Remove the cause of the odor",
           ],
+          "props": Object {
+            "key": "md_9",
+          },
           "tag": "strong",
         },
         ". Pick it up with paper towels or scrape it off with a plastic utensil or putty knife.",
       ],
+      "props": Object {
+        "key": "md_10",
+      },
       "tag": "p",
     },
     Object {
@@ -83,9 +113,15 @@ Object {
           "children": Array [
             "Materials Needed",
           ],
+          "props": Object {
+            "key": "md_12",
+          },
           "tag": "strong",
         },
       ],
+      "props": Object {
+        "key": "md_13",
+      },
       "tag": "p",
     },
     Object {
@@ -94,51 +130,78 @@ Object {
           "children": Array [
             "Baking soda",
           ],
+          "props": Object {
+            "key": "md_14",
+          },
           "tag": "li",
         },
         Object {
           "children": Array [
             "Bucket",
           ],
+          "props": Object {
+            "key": "md_15",
+          },
           "tag": "li",
         },
         Object {
           "children": Array [
             "Dish soap",
           ],
+          "props": Object {
+            "key": "md_16",
+          },
           "tag": "li",
         },
         Object {
           "children": Array [
             "Distilled vinegar",
           ],
+          "props": Object {
+            "key": "md_17",
+          },
           "tag": "li",
         },
         Object {
           "children": Array [
             "Hot water",
           ],
+          "props": Object {
+            "key": "md_18",
+          },
           "tag": "li",
         },
         Object {
           "children": Array [
             "Towels",
           ],
+          "props": Object {
+            "key": "md_19",
+          },
           "tag": "li",
         },
         Object {
           "children": Array [
             "Vacuum",
           ],
+          "props": Object {
+            "key": "md_20",
+          },
           "tag": "li",
         },
         Object {
           "children": Array [
             "Washcloth or clean sponge",
           ],
+          "props": Object {
+            "key": "md_21",
+          },
           "tag": "li",
         },
       ],
+      "props": Object {
+        "key": "md_22",
+      },
       "tag": "ul",
     },
     Object {
@@ -147,16 +210,25 @@ Object {
           "children": Array [
             "Step 1: Combine 1 cup of vinegar, 1 teaspoon of dish soap, and 1 gallon of hot water in a bucket",
           ],
+          "props": Object {
+            "key": "md_23",
+          },
           "tag": "strong",
         },
         ".",
       ],
+      "props": Object {
+        "key": "md_24",
+      },
       "tag": "p",
     },
     Object {
       "children": Array [
         "**Step 2: Put on some rubber dishwashing gloves and apply the solution to the source of the odor **.",
       ],
+      "props": Object {
+        "key": "md_25",
+      },
       "tag": "p",
     },
     Object {
@@ -165,10 +237,16 @@ Object {
           "children": Array [
             "Step 3: Rub the solution into the spot with a scrub brush or sponge",
           ],
+          "props": Object {
+            "key": "md_26",
+          },
           "tag": "strong",
         },
         ". Let it work for about half an hour.",
       ],
+      "props": Object {
+        "key": "md_27",
+      },
       "tag": "p",
     },
     Object {
@@ -177,10 +255,16 @@ Object {
           "children": Array [
             "Step 4: Soak up the dirty vinegar solution with a towel",
           ],
+          "props": Object {
+            "key": "md_28",
+          },
           "tag": "strong",
         },
         ".",
       ],
+      "props": Object {
+        "key": "md_29",
+      },
       "tag": "p",
     },
     Object {
@@ -189,10 +273,16 @@ Object {
           "children": Array [
             "Step 5: Pour baking soda on the stinky spot",
           ],
+          "props": Object {
+            "key": "md_30",
+          },
           "tag": "strong",
         },
         ". Apply it as heavily as possible. A 1/4-inch thickness or more is best. Leave it there for as long as possible. Overnight is good but several days is better.",
       ],
+      "props": Object {
+        "key": "md_31",
+      },
       "tag": "p",
     },
     Object {
@@ -201,10 +291,16 @@ Object {
           "children": Array [
             "Step 6: Vacuum up the baking soda",
           ],
+          "props": Object {
+            "key": "md_32",
+          },
           "tag": "strong",
         },
         ". Use a high-powered wet/dry vacuum if possible. If you only have a regular household vacuum, empty the canister or replace the bag before you use it.",
       ],
+      "props": Object {
+        "key": "md_33",
+      },
       "tag": "p",
     },
     Object {
@@ -213,16 +309,25 @@ Object {
           "children": Array [
             "Step 7: Repeat steps 5 and 6, if the odor lingers",
           ],
+          "props": Object {
+            "key": "md_34",
+          },
           "tag": "strong",
         },
         ".",
       ],
+      "props": Object {
+        "key": "md_35",
+      },
       "tag": "p",
     },
     Object {
       "children": Array [
         "**Step 8: Put the windows down and leave the car outdoors, if you can, to let it air out **.",
       ],
+      "props": Object {
+        "key": "md_36",
+      },
       "tag": "p",
     },
     Object {
@@ -285,6 +390,9 @@ Object {
         },
         ".",
       ],
+      "props": Object {
+        "key": "md_42",
+      },
       "tag": "p",
     },
     Object {
@@ -293,9 +401,15 @@ Object {
           "children": Array [
             "Materials Needed",
           ],
+          "props": Object {
+            "key": "md_43",
+          },
           "tag": "strong",
         },
       ],
+      "props": Object {
+        "key": "md_44",
+      },
       "tag": "p",
     },
     Object {
@@ -304,27 +418,42 @@ Object {
           "children": Array [
             "Automotive carpet and upholstery cleaner (Available in auto parts stores and online.)",
           ],
+          "props": Object {
+            "key": "md_45",
+          },
           "tag": "li",
         },
         Object {
           "children": Array [
             "Towels",
           ],
+          "props": Object {
+            "key": "md_46",
+          },
           "tag": "li",
         },
         Object {
           "children": Array [
             "Washcloth or clean sponge",
           ],
+          "props": Object {
+            "key": "md_47",
+          },
           "tag": "li",
         },
         Object {
           "children": Array [
             "Vacuum",
           ],
+          "props": Object {
+            "key": "md_48",
+          },
           "tag": "li",
         },
       ],
+      "props": Object {
+        "key": "md_49",
+      },
       "tag": "ul",
     },
     Object {
@@ -333,10 +462,16 @@ Object {
           "children": Array [
             "Step 1: Take everything out of the car",
           ],
+          "props": Object {
+            "key": "md_50",
+          },
           "tag": "strong",
         },
         ". Remove the floor mats, too.",
       ],
+      "props": Object {
+        "key": "md_51",
+      },
       "tag": "p",
     },
     Object {
@@ -345,10 +480,16 @@ Object {
           "children": Array [
             "Step 2: Vacuum the entire car, top to bottom",
           ],
+          "props": Object {
+            "key": "md_52",
+          },
           "tag": "strong",
         },
         ".",
       ],
+      "props": Object {
+        "key": "md_53",
+      },
       "tag": "p",
     },
     Object {
@@ -357,10 +498,16 @@ Object {
           "children": Array [
             "Step 3: Clean the carpet, upholstery, and headliner/roof upholstery with automotive carpet and upholstery cleaner",
           ],
+          "props": Object {
+            "key": "md_54",
+          },
           "tag": "strong",
         },
         ". Follow the manufacturer’s instructions. ",
       ],
+      "props": Object {
+        "key": "md_55",
+      },
       "tag": "p",
     },
     Object {
@@ -379,6 +526,9 @@ Object {
         },
         ". It even comes with a special microfiber towel to use.",
       ],
+      "props": Object {
+        "key": "md_57",
+      },
       "tag": "p",
     },
     Object {
@@ -387,10 +537,16 @@ Object {
           "children": Array [
             "Step 4: Let the car sit outdoors with the windows open for as long as you can to really air it out",
           ],
+          "props": Object {
+            "key": "md_58",
+          },
           "tag": "strong",
         },
         ". Do not leave the doors open, though. The dome light might run down the battery.",
       ],
+      "props": Object {
+        "key": "md_59",
+      },
       "tag": "p",
     },
     Object {
@@ -407,9 +563,15 @@ Object {
           "children": Array [
             "Materials Needed",
           ],
+          "props": Object {
+            "key": "md_61",
+          },
           "tag": "strong",
         },
       ],
+      "props": Object {
+        "key": "md_62",
+      },
       "tag": "p",
     },
     Object {
@@ -418,21 +580,33 @@ Object {
           "children": Array [
             "Essential oil diffuser",
           ],
+          "props": Object {
+            "key": "md_63",
+          },
           "tag": "li",
         },
         Object {
           "children": Array [
             "Odor-absorbing substance",
           ],
+          "props": Object {
+            "key": "md_64",
+          },
           "tag": "li",
         },
         Object {
           "children": Array [
             "Upholstery odor remover",
           ],
+          "props": Object {
+            "key": "md_65",
+          },
           "tag": "li",
         },
       ],
+      "props": Object {
+        "key": "md_66",
+      },
       "tag": "ul",
     },
     Object {
@@ -441,10 +615,16 @@ Object {
           "children": Array [
             "Step 1: Spray the upholstery, headliner, and carpet with a spray odor neutralizer",
           ],
+          "props": Object {
+            "key": "md_67",
+          },
           "tag": "strong",
         },
         ".",
       ],
+      "props": Object {
+        "key": "md_68",
+      },
       "tag": "p",
     },
     Object {
@@ -453,6 +633,9 @@ Object {
           "children": Array [
             "Step 2: Use an essential oil diffuser in your car",
           ],
+          "props": Object {
+            "key": "md_69",
+          },
           "tag": "strong",
         },
         ". You can choose your favorite essential oil fragrance or use a different essential oil each day. ",
@@ -469,6 +652,9 @@ Object {
         },
         " has a nice selection of diffusers to choose from and sells essential oils.",
       ],
+      "props": Object {
+        "key": "md_71",
+      },
       "tag": "p",
     },
     Object {
@@ -477,6 +663,9 @@ Object {
           "children": Array [
             "Step 3: Place an odor-absorbing substance near the source of the odor",
           ],
+          "props": Object {
+            "key": "md_72",
+          },
           "tag": "strong",
         },
         ". You can pick them up at the local discount store or order them online. ",
@@ -493,12 +682,18 @@ Object {
         },
         " sells a very effective product online.",
       ],
+      "props": Object {
+        "key": "md_74",
+      },
       "tag": "p",
     },
     Object {
       "children": Array [
         "We all know how distracting the stink from a little spilled milk can be, so no doubt you’ll be glad you have it removed before it gets any worse. A nice-smelling car makes any trip, long or short, that much more pleasant. ",
       ],
+      "props": Object {
+        "key": "md_75",
+      },
       "tag": "p",
     },
   ],
@@ -512,6 +707,9 @@ Object {
       "children": Array [
         "You don’t have to just live with the odor when there is an unidentified stink in your car. It will take a little effort, but it is well worth it to be able to get in your car without thinking, “ew, why does it smell like that in here?” All you have to do is find the source, clean it up, then give your car a good cleaning – which it probably needs anyway.",
       ],
+      "props": Object {
+        "key": "md_0",
+      },
       "tag": "p",
     },
     Object {
@@ -528,9 +726,15 @@ Object {
           "children": Array [
             "Materials Needed",
           ],
+          "props": Object {
+            "key": "md_2",
+          },
           "tag": "strong",
         },
       ],
+      "props": Object {
+        "key": "md_3",
+      },
       "tag": "p",
     },
     Object {
@@ -539,15 +743,24 @@ Object {
           "children": Array [
             "Paper towels",
           ],
+          "props": Object {
+            "key": "md_4",
+          },
           "tag": "li",
         },
         Object {
           "children": Array [
             "Plastic utensil or putty knife",
           ],
+          "props": Object {
+            "key": "md_5",
+          },
           "tag": "li",
         },
       ],
+      "props": Object {
+        "key": "md_6",
+      },
       "tag": "ul",
     },
     Object {
@@ -556,10 +769,16 @@ Object {
           "children": Array [
             "Step 1: Determine where the odor is coming from",
           ],
+          "props": Object {
+            "key": "md_7",
+          },
           "tag": "strong",
         },
         ". It could be leftover residue from an old milk or juice spill, a half-eaten piece of fruit, or a sippy cup with a little curdled milk left in the bottom.",
       ],
+      "props": Object {
+        "key": "md_8",
+      },
       "tag": "p",
     },
     Object {
@@ -568,10 +787,16 @@ Object {
           "children": Array [
             "Step 2: Remove the cause of the odor",
           ],
+          "props": Object {
+            "key": "md_9",
+          },
           "tag": "strong",
         },
         ". Pick it up with paper towels or scrape it off with a plastic utensil or putty knife.",
       ],
+      "props": Object {
+        "key": "md_10",
+      },
       "tag": "p",
     },
     Object {
@@ -588,9 +813,15 @@ Object {
           "children": Array [
             "Materials Needed",
           ],
+          "props": Object {
+            "key": "md_12",
+          },
           "tag": "strong",
         },
       ],
+      "props": Object {
+        "key": "md_13",
+      },
       "tag": "p",
     },
     Object {
@@ -599,51 +830,78 @@ Object {
           "children": Array [
             "Baking soda",
           ],
+          "props": Object {
+            "key": "md_14",
+          },
           "tag": "li",
         },
         Object {
           "children": Array [
             "Bucket",
           ],
+          "props": Object {
+            "key": "md_15",
+          },
           "tag": "li",
         },
         Object {
           "children": Array [
             "Dish soap",
           ],
+          "props": Object {
+            "key": "md_16",
+          },
           "tag": "li",
         },
         Object {
           "children": Array [
             "Distilled vinegar",
           ],
+          "props": Object {
+            "key": "md_17",
+          },
           "tag": "li",
         },
         Object {
           "children": Array [
             "Hot water",
           ],
+          "props": Object {
+            "key": "md_18",
+          },
           "tag": "li",
         },
         Object {
           "children": Array [
             "Towels",
           ],
+          "props": Object {
+            "key": "md_19",
+          },
           "tag": "li",
         },
         Object {
           "children": Array [
             "Vacuum",
           ],
+          "props": Object {
+            "key": "md_20",
+          },
           "tag": "li",
         },
         Object {
           "children": Array [
             "Washcloth or clean sponge",
           ],
+          "props": Object {
+            "key": "md_21",
+          },
           "tag": "li",
         },
       ],
+      "props": Object {
+        "key": "md_22",
+      },
       "tag": "ul",
     },
     Object {
@@ -652,16 +910,25 @@ Object {
           "children": Array [
             "Step 1: Combine 1 cup of vinegar, 1 teaspoon of dish soap, and 1 gallon of hot water in a bucket",
           ],
+          "props": Object {
+            "key": "md_23",
+          },
           "tag": "strong",
         },
         ".",
       ],
+      "props": Object {
+        "key": "md_24",
+      },
       "tag": "p",
     },
     Object {
       "children": Array [
         "**Step 2: Put on some rubber dishwashing gloves and apply the solution to the source of the odor **.",
       ],
+      "props": Object {
+        "key": "md_25",
+      },
       "tag": "p",
     },
     Object {
@@ -670,10 +937,16 @@ Object {
           "children": Array [
             "Step 3: Rub the solution into the spot with a scrub brush or sponge",
           ],
+          "props": Object {
+            "key": "md_26",
+          },
           "tag": "strong",
         },
         ". Let it work for about half an hour.",
       ],
+      "props": Object {
+        "key": "md_27",
+      },
       "tag": "p",
     },
     Object {
@@ -682,10 +955,16 @@ Object {
           "children": Array [
             "Step 4: Soak up the dirty vinegar solution with a towel",
           ],
+          "props": Object {
+            "key": "md_28",
+          },
           "tag": "strong",
         },
         ".",
       ],
+      "props": Object {
+        "key": "md_29",
+      },
       "tag": "p",
     },
     Object {
@@ -694,10 +973,16 @@ Object {
           "children": Array [
             "Step 5: Pour baking soda on the stinky spot",
           ],
+          "props": Object {
+            "key": "md_30",
+          },
           "tag": "strong",
         },
         ". Apply it as heavily as possible. A 1/4-inch thickness or more is best. Leave it there for as long as possible. Overnight is good but several days is better.",
       ],
+      "props": Object {
+        "key": "md_31",
+      },
       "tag": "p",
     },
     Object {
@@ -706,10 +991,16 @@ Object {
           "children": Array [
             "Step 6: Vacuum up the baking soda",
           ],
+          "props": Object {
+            "key": "md_32",
+          },
           "tag": "strong",
         },
         ". Use a high-powered wet/dry vacuum if possible. If you only have a regular household vacuum, empty the canister or replace the bag before you use it.",
       ],
+      "props": Object {
+        "key": "md_33",
+      },
       "tag": "p",
     },
     Object {
@@ -718,16 +1009,25 @@ Object {
           "children": Array [
             "Step 7: Repeat steps 5 and 6, if the odor lingers",
           ],
+          "props": Object {
+            "key": "md_34",
+          },
           "tag": "strong",
         },
         ".",
       ],
+      "props": Object {
+        "key": "md_35",
+      },
       "tag": "p",
     },
     Object {
       "children": Array [
         "**Step 8: Put the windows down and leave the car outdoors, if you can, to let it air out **.",
       ],
+      "props": Object {
+        "key": "md_36",
+      },
       "tag": "p",
     },
     Object {
@@ -790,6 +1090,9 @@ Object {
         },
         ".",
       ],
+      "props": Object {
+        "key": "md_42",
+      },
       "tag": "p",
     },
     Object {
@@ -798,9 +1101,15 @@ Object {
           "children": Array [
             "Materials Needed",
           ],
+          "props": Object {
+            "key": "md_43",
+          },
           "tag": "strong",
         },
       ],
+      "props": Object {
+        "key": "md_44",
+      },
       "tag": "p",
     },
     Object {
@@ -809,27 +1118,42 @@ Object {
           "children": Array [
             "Automotive carpet and upholstery cleaner (Available in auto parts stores and online.)",
           ],
+          "props": Object {
+            "key": "md_45",
+          },
           "tag": "li",
         },
         Object {
           "children": Array [
             "Towels",
           ],
+          "props": Object {
+            "key": "md_46",
+          },
           "tag": "li",
         },
         Object {
           "children": Array [
             "Washcloth or clean sponge",
           ],
+          "props": Object {
+            "key": "md_47",
+          },
           "tag": "li",
         },
         Object {
           "children": Array [
             "Vacuum",
           ],
+          "props": Object {
+            "key": "md_48",
+          },
           "tag": "li",
         },
       ],
+      "props": Object {
+        "key": "md_49",
+      },
       "tag": "ul",
     },
     Object {
@@ -838,10 +1162,16 @@ Object {
           "children": Array [
             "Step 1: Take everything out of the car",
           ],
+          "props": Object {
+            "key": "md_50",
+          },
           "tag": "strong",
         },
         ". Remove the floor mats, too.",
       ],
+      "props": Object {
+        "key": "md_51",
+      },
       "tag": "p",
     },
     Object {
@@ -850,10 +1180,16 @@ Object {
           "children": Array [
             "Step 2: Vacuum the entire car, top to bottom",
           ],
+          "props": Object {
+            "key": "md_52",
+          },
           "tag": "strong",
         },
         ".",
       ],
+      "props": Object {
+        "key": "md_53",
+      },
       "tag": "p",
     },
     Object {
@@ -862,10 +1198,16 @@ Object {
           "children": Array [
             "Step 3: Clean the carpet, upholstery, and headliner/roof upholstery with automotive carpet and upholstery cleaner",
           ],
+          "props": Object {
+            "key": "md_54",
+          },
           "tag": "strong",
         },
         ". Follow the manufacturer’s instructions. ",
       ],
+      "props": Object {
+        "key": "md_55",
+      },
       "tag": "p",
     },
     Object {
@@ -884,6 +1226,9 @@ Object {
         },
         ". It even comes with a special microfiber towel to use.",
       ],
+      "props": Object {
+        "key": "md_57",
+      },
       "tag": "p",
     },
     Object {
@@ -892,10 +1237,16 @@ Object {
           "children": Array [
             "Step 4: Let the car sit outdoors with the windows open for as long as you can to really air it out",
           ],
+          "props": Object {
+            "key": "md_58",
+          },
           "tag": "strong",
         },
         ". Do not leave the doors open, though. The dome light might run down the battery.",
       ],
+      "props": Object {
+        "key": "md_59",
+      },
       "tag": "p",
     },
     Object {
@@ -912,9 +1263,15 @@ Object {
           "children": Array [
             "Materials Needed",
           ],
+          "props": Object {
+            "key": "md_61",
+          },
           "tag": "strong",
         },
       ],
+      "props": Object {
+        "key": "md_62",
+      },
       "tag": "p",
     },
     Object {
@@ -923,21 +1280,33 @@ Object {
           "children": Array [
             "Essential oil diffuser",
           ],
+          "props": Object {
+            "key": "md_63",
+          },
           "tag": "li",
         },
         Object {
           "children": Array [
             "Odor-absorbing substance",
           ],
+          "props": Object {
+            "key": "md_64",
+          },
           "tag": "li",
         },
         Object {
           "children": Array [
             "Upholstery odor remover",
           ],
+          "props": Object {
+            "key": "md_65",
+          },
           "tag": "li",
         },
       ],
+      "props": Object {
+        "key": "md_66",
+      },
       "tag": "ul",
     },
     Object {
@@ -946,10 +1315,16 @@ Object {
           "children": Array [
             "Step 1: Spray the upholstery, headliner, and carpet with a spray odor neutralizer",
           ],
+          "props": Object {
+            "key": "md_67",
+          },
           "tag": "strong",
         },
         ".",
       ],
+      "props": Object {
+        "key": "md_68",
+      },
       "tag": "p",
     },
     Object {
@@ -958,6 +1333,9 @@ Object {
           "children": Array [
             "Step 2: Use an essential oil diffuser in your car",
           ],
+          "props": Object {
+            "key": "md_69",
+          },
           "tag": "strong",
         },
         ". You can choose your favorite essential oil fragrance or use a different essential oil each day. ",
@@ -974,6 +1352,9 @@ Object {
         },
         " has a nice selection of diffusers to choose from and sells essential oils.",
       ],
+      "props": Object {
+        "key": "md_71",
+      },
       "tag": "p",
     },
     Object {
@@ -982,6 +1363,9 @@ Object {
           "children": Array [
             "Step 3: Place an odor-absorbing substance near the source of the odor",
           ],
+          "props": Object {
+            "key": "md_72",
+          },
           "tag": "strong",
         },
         ". You can pick them up at the local discount store or order them online. ",
@@ -998,12 +1382,18 @@ Object {
         },
         " sells a very effective product online.",
       ],
+      "props": Object {
+        "key": "md_74",
+      },
       "tag": "p",
     },
     Object {
       "children": Array [
         "We all know how distracting the stink from a little spilled milk can be, so no doubt you’ll be glad you have it removed before it gets any worse. A nice-smelling car makes any trip, long or short, that much more pleasant. ",
       ],
+      "props": Object {
+        "key": "md_75",
+      },
       "tag": "p",
     },
   ],
@@ -1042,15 +1432,24 @@ Object {
           "children": Array [
             "foo",
           ],
+          "props": Object {
+            "key": "md_1",
+          },
           "tag": "li",
         },
       ],
+      "props": Object {
+        "key": "md_2",
+      },
       "tag": "ul",
     },
     Object {
       "children": Array [
         "-bar",
       ],
+      "props": Object {
+        "key": "md_3",
+      },
       "tag": "p",
     },
   ],
@@ -1067,9 +1466,15 @@ Object {
           "children": Array [
             "$ npm install",
           ],
+          "props": Object {
+            "key": "md_0",
+          },
           "tag": "codespan",
         },
       ],
+      "props": Object {
+        "key": "md_1",
+      },
       "tag": "p",
     },
   ],
@@ -1160,6 +1565,9 @@ Object {
           "tag": "img",
         },
       ],
+      "props": Object {
+        "key": "md_1",
+      },
       "tag": "p",
     },
   ],
@@ -1176,9 +1584,15 @@ Object {
           "children": Array [
             "there",
           ],
+          "props": Object {
+            "key": "md_0",
+          },
           "tag": "em",
         },
       ],
+      "props": Object {
+        "key": "md_1",
+      },
       "tag": "p",
     },
   ],
@@ -1202,6 +1616,9 @@ Object {
           "tag": "a",
         },
       ],
+      "props": Object {
+        "key": "md_1",
+      },
       "tag": "p",
     },
   ],
@@ -1217,15 +1634,24 @@ Object {
           "children": Array [
             "foo",
           ],
+          "props": Object {
+            "key": "md_0",
+          },
           "tag": "li",
         },
         Object {
           "children": Array [
             "bar",
           ],
+          "props": Object {
+            "key": "md_1",
+          },
           "tag": "li",
         },
       ],
+      "props": Object {
+        "key": "md_2",
+      },
       "tag": "ul",
     },
   ],
@@ -1264,18 +1690,30 @@ Object {
                   "children": Array [
                     "Red",
                   ],
+                  "props": Object {
+                    "key": "md_0",
+                  },
                   "tag": "li",
                 },
                 Object {
                   "children": Array [
                     "Blue",
                   ],
+                  "props": Object {
+                    "key": "md_1",
+                  },
                   "tag": "li",
                 },
               ],
+              "props": Object {
+                "key": "md_2",
+              },
               "tag": "ul",
             },
           ],
+          "props": Object {
+            "key": "md_3",
+          },
           "tag": "li",
         },
         Object {
@@ -1287,21 +1725,36 @@ Object {
                   "children": Array [
                     "Triangle",
                   ],
+                  "props": Object {
+                    "key": "md_4",
+                  },
                   "tag": "li",
                 },
                 Object {
                   "children": Array [
                     "Rectangle",
                   ],
+                  "props": Object {
+                    "key": "md_5",
+                  },
                   "tag": "li",
                 },
               ],
+              "props": Object {
+                "key": "md_6",
+              },
               "tag": "ul",
             },
           ],
+          "props": Object {
+            "key": "md_7",
+          },
           "tag": "li",
         },
       ],
+      "props": Object {
+        "key": "md_8",
+      },
       "tag": "ul",
     },
   ],
@@ -1317,15 +1770,24 @@ Object {
           "children": Array [
             "foo",
           ],
+          "props": Object {
+            "key": "md_0",
+          },
           "tag": "li",
         },
         Object {
           "children": Array [
             "bar",
           ],
+          "props": Object {
+            "key": "md_1",
+          },
           "tag": "li",
         },
       ],
+      "props": Object {
+        "key": "md_2",
+      },
       "tag": "ol",
     },
   ],
@@ -1347,6 +1809,9 @@ Object {
           "tag": "img",
         },
       ],
+      "props": Object {
+        "key": "md_1",
+      },
       "tag": "p",
     },
     Object {
@@ -1395,9 +1860,15 @@ Object {
           "children": Array [
             "there",
           ],
+          "props": Object {
+            "key": "md_0",
+          },
           "tag": "strong",
         },
       ],
+      "props": Object {
+        "key": "md_1",
+      },
       "tag": "p",
     },
   ],
@@ -1445,9 +1916,15 @@ Object {
                     "tag": "th",
                   },
                 ],
+                "props": Object {
+                  "key": "md_3",
+                },
                 "tag": "tr",
               },
             ],
+            "props": Object {
+              "key": "md_16",
+            },
             "tag": "thead",
           },
         ],
@@ -1487,6 +1964,9 @@ Object {
                     "tag": "td",
                   },
                 ],
+                "props": Object {
+                  "key": "md_7",
+                },
                 "tag": "tr",
               },
               Object {
@@ -1522,6 +2002,9 @@ Object {
                     "tag": "td",
                   },
                 ],
+                "props": Object {
+                  "key": "md_11",
+                },
                 "tag": "tr",
               },
               Object {
@@ -1557,13 +2040,22 @@ Object {
                     "tag": "td",
                   },
                 ],
+                "props": Object {
+                  "key": "md_15",
+                },
                 "tag": "tr",
               },
             ],
+            "props": Object {
+              "key": "md_17",
+            },
             "tag": "tbody",
           },
         ],
       ],
+      "props": Object {
+        "key": "md_18",
+      },
       "tag": "table",
     },
   ],
@@ -1577,7 +2069,34 @@ Object {
       "children": Array [
         "hello",
       ],
+      "props": Object {
+        "key": "md_0",
+      },
       "tag": "p",
+    },
+  ],
+}
+`;
+
+exports[`should be able to handle title formats 1`] = `
+Object {
+  "tree": Array [
+    Object {
+      "children": Array [
+        "hey",
+      ],
+      "props": Object {
+        "key": "md_0",
+      },
+      "tag": "strong",
+    },
+    Object {
+      "props": Object {
+        "key": "md_1",
+        "level": 1,
+        "text": "{{0}}",
+      },
+      "tag": "heading",
     },
   ],
 }

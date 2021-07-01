@@ -31,7 +31,7 @@ function createRenderer(tracker) {
     // eslint-disable-next-line no-plusplus, no-param-reassign
     const elementId = tracker.nextElementId++;
     let processedChildren = null;
-    const processedProps = props;
+    const processedProps = props || {};
 
     if (children) {
       processedChildren = Array.isArray(children)

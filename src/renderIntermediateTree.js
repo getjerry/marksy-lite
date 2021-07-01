@@ -32,16 +32,16 @@ export function renderIntermediateTree(treeWrap = { tree: [] }, options = {}, co
   }
 
   const specialRenderers = {
-    code: ({ code, language }) => {
+    code: ({ code, language, key }) => {
       if (language === 'marksy') {
         try {
-          const components = Object.keys(options.components).map(key => options.components[key]);
+          const components = Object.keys(options.components).map(k => options.components[k]);
           const mockedReact = (tag, props = {}, ...children) => {
             const componentProps =
               components.indexOf(tag) >= 0
                 ? Object.assign(props || {}, {
                     // eslint-disable-next-line no-plusplus
-                    key: tracker.nextElementId++,
+                    key: key || tracker.nextElementId++,
                     context: tracker.context,
                   })
                 : props;
@@ -64,7 +64,7 @@ export function renderIntermediateTree(treeWrap = { tree: [] }, options = {}, co
       if (options.elements?.code) {
         return null;
       }
-      return CodeComponent(options)({ code, language });
+      return CodeComponent(options)({ code, language, key });
     },
     codespan: (props, children, elementId) => {
       if (options.elements?.codespan) {

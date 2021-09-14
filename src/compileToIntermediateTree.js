@@ -33,6 +33,10 @@ function createRenderer(tracker) {
     let processedChildren = null;
     const processedProps = props || {};
 
+    if (processedProps.text) {
+      processedProps.text = he.decode(processedProps.text);
+    }
+
     if (children) {
       processedChildren = Array.isArray(children)
         ? children.map(populateInlineContent).filter(one => one !== null && one !== undefined)

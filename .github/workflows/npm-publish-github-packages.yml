@@ -9,30 +9,39 @@ on:
       runs-on:
         description: Run job on self-hosted/ubuntu-latest
         required: true
-        default: self-hosted
+        default: ubuntu-latest
 
 jobs:
-  build:
-    runs-on: ${{ github.event.inputs.runs-on }}
-    steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
-        with:
-          node-version: 20
-      - run: yarn
-
   publish-gpr:
-    needs: build
     runs-on: ${{ github.event.inputs.runs-on }}
     permissions:
       contents: read
       packages: write
     steps:
+      - name: Configure AWS credentials
+        uses: aws-actions/configure-aws-credentials@v4
+        with:
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws-region: us-west-2
+
+      - name: Setup git credentials
+        uses: ./.github/actions/setup-git-credentials
+        id: setup-git-credentials
+        with:
+          app-id: ${{ vars.NPM_INSTALLER_APP_ID }}
+          private-key: ${{ secrets.NPM_INSTALLER_PRIVATE_KEY }}
+
       - uses: actions/checkout@v4
+
       - uses: actions/setup-node@v4
         with:
           node-version: 20
+
       - run: yarn
+        env:
+          github_npm_token: ${{ secrets.GITHUB_TOKEN }}
+
       - run: npm publish
         env:
           GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}

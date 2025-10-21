@@ -1,0 +1,29 @@
+name: "Setup git credentials"
+description: "Setup git credentials by npm installer"
+inputs:
+  app-id:
+    description: "GitHub App ID (pass from workflow inputs or vars)"
+    required: true
+  private-key:
+    description: "GitHub App private key (pass from workflow secrets)"
+    required: true
+outputs:
+  git-credentials:
+    description: "Git credentials for accessing the repository"
+    value: https://x-access-token:${{ steps.npm-installer-token.outputs.token }}@github.com
+runs:
+  using: "composite"
+  steps:
+    - uses: actions/create-github-app-token@v2
+      id: npm-installer-token
+      with:
+        # required
+        app-id: ${{ inputs.app-id }}
+        private-key: ${{ inputs.private-key }}
+        owner: getjerry
+        skip-token-revoke: true
+
+    - name: Setup git credentials
+      uses: getjerry/setup-git-credentials@main
+      with:
+        credentials: https://x-access-token:${{ steps.npm-installer-token.outputs.token }}@github.com/

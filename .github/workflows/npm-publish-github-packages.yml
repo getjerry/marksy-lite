@@ -4,12 +4,16 @@
 name: Node.js Package
 
 on:
-  release:
-    types: [created]
+  workflow_dispatch:
+    inputs:
+      runs-on:
+        description: Run job on self-hosted/ubuntu-latest
+        required: true
+        default: self-hosted
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: ${{ github.event.inputs.runs-on }}
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
@@ -19,7 +23,7 @@ jobs:
 
   publish-gpr:
     needs: build
-    runs-on: ubuntu-latest
+    runs-on: ${{ github.event.inputs.runs-on }}
     permissions:
       contents: read
       packages: write

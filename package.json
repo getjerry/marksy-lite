@@ -1,6 +1,6 @@
 {
   "name": "@getjerry/marksy-lite",
-  "version": "8.1.14",
+  "version": "8.1.18",
   "description": "Convert markdown into react components",
   "keywords": [
     "convert",

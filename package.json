@@ -19,6 +19,9 @@
     "type": "git",
     "url": "https://github.com/getjerry/marksy"
   },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
   "scripts": {
     "build": "cross-env BABEL_ENV=production babel src/ --out-dir=lib/ -s && cp src/*.d.ts ./lib/",
     "lint": "cross-env NODE_ENV=production eslint --cache --cache-location=.cache/eslint --ext .js,.jsx,.json ./src ./app",
